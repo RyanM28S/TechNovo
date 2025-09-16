@@ -8,10 +8,16 @@
     padding-bottom: 10px;
     box-shadow: rgb(206, 198, 198);
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 50px ;
+    max-width: 5000px ;
+    transition: box-shadow 0.3s;
+}
+.caixa_informacoes:hover {
+    box-shadow: 0 16px 48px rgba(0,0,0,0.25);
+ 
 }
 .titulo button {
-  font-size: 15px;
+  font-size: 16px;
+  border: 1px solid #fffafa
 }
 .caixa_informacoes input:focus {
     border: 2px solid #888;
@@ -75,8 +81,18 @@ margin-left: 20px;
     margin-bottom: 15px;
     margin-left: 0;
 }
-.botaovoltar {
-    font-size: 10px;
+.titulo button {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background 0.3s,color 0.3s ;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    
+}
+.titulo button:hover {
+    background: #4e3cf0;
+    color: black;
 }
 .caixa_informacoes button {
     padding-left: 200px;
@@ -88,6 +104,10 @@ margin-left: 20px;
     background-color: #007BE5;
     color: white;
     font-weight: bold;
+    transition: background 0.3s;
+}
+.caixa_informacoes button:hover {
+background: #074e8d;
 }
 .jatem {
     font-size: 14px;
@@ -102,7 +122,7 @@ font-weight: bold;
     color: rgb(122, 122, 121);
 }
 .corpo {
-    background-color: #4D49FC;
+    background-color: #140de9;
 }
 .titulo {
     text-align: center;
