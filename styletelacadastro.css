@@ -8,9 +8,32 @@
     padding-bottom: 10px;
     box-shadow: black;
 }
+.caixa_informacoes h4 {
+    color: rgb(122, 122, 121);
+}
 .corpo {
     background-color: #3d38f5;
 }
 .titulo {
     text-align: center;
+}
+.nomecompleto{
+    background: #f6f7f8;
+    margin-bottom: 10px;
+}
+.gmail {
+    background: #f6f7f8;
+    margin-bottom: 10px;
+}
+.senha {
+    background: #f6f7f8;
+    margin-bottom: 10px;
+}
+.confirmarsenha {
+    background: #f6f7f8;
+    margin-bottom: 10px;
+}
+.aceitartermos {
+    background: #f6f7f8;
+    margin-bottom: 10px;
 }
