@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    height: 100px;
+    width: 350px;
+}
+.head {
+    display: flex;
+}
+.BotoesAcesso {
+    border: none;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.BotoesAcesso2 {
+    border: none;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
