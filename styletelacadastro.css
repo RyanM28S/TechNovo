@@ -1,21 +1,121 @@
 .caixa_informacoes {
-    background-color: rgb(255, 255, 255);
+    background-color: #FFFFFF;
     text-align: center;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 410px;
+    margin-right: 410px;
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: black;
+    box-shadow: rgb(206, 198, 198);
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: ;
+}
+.titulo button {
+  font-size: 15px;
+}
+.caixa_informacoes input:focus {
+    border: 2px solid #888;
+    outline: none;
+    }
+.texto {
+    text-align: left;
+    margin-bottom: 15px;
+    padding-left: 90px;
+}
+.toptop img {  
+    height: 65px;  
+    width: 70px; 
+    border-radius: 10px;
+}
+.h1top {
+margin-top: 10px;
+margin-left: 20px;
+}
+.toptop {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-left: 470px;
+    margin-top: 20px  
+}
+.check {
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.check .aceitartermos {
+    margin-bottom: 0;
+    margin-right: 8px;
+    height: 20px;
+}
+.labelace {
+    color: #272921;
+    margin-bottom: 0;
+    margin-right: 8px;
+    line-height: 20px;
+}
+.caixa_informacoes h1 {
+    font-weight: normal;
+}
+.caixa_informacoes h4 {
+    font-weight: normal;
+}
+.caixa_informacoes input {
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+.botaovoltar {
+    font-size: 10px;
+}
+.caixa_informacoes button {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #007BE5;
+    color: white;
+    font-weight: bold;
+}
+.jatem {
+    font-size: 14px;
+    color: rgb(80, 80, 70);
+}
+.alink {
+text-decoration: none;
+color: #074e8d;
+font-weight: bold;
 }
 .caixa_informacoes h4 {
     color: rgb(122, 122, 121);
 }
 .corpo {
-    background-color: #3d38f5;
+    background-color: #4D49FC;
 }
 .titulo {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulo h1 {
+    color: white;
+    font-weight: normal;
+}
+.titulo button {
+    color: white;
+    background-color: transparent;
+    border: none;
 }
 .nomecompleto{
     background: #f6f7f8;

@@ -13,9 +13,109 @@
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
-    height: 300px;
+    height: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
+.Caixaminhasenha img {
+    height: 60px;
+    background-color: oklch(0.932 0.032 255);
+    color: #3d38f5;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.titulotop img {  
+    height: 65px;  
+    width: 70px; 
+    border-radius: 10px;
+}
+.titulotop {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-left: 470px;
+    margin-top: 20px  
+}
+.imagemtop {
+;
+}
+.h1top {
+margin-top: 10px;
+margin-left: 20px;
+}
+.cabeça h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Caixaminhasenha input:focus {
+    border: 2px solid #888;
+    outline: none;
+}
+.chapou {
+    margin-top: 10px;
+}
+.minhasenhavoltar {
+    background-color: #140de9;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+.cabeça {
+    text-align: center;
+}
+.texto1 {
+    font-size: 30px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.texto2 {
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 10px;
+color: rgb(80, 80, 70);
+font-size: 14px;
+}
+.texto3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 36px;
+    font-weight: bold;
+}
+.inputemail {
+    margin-right: 500px ;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 715px;
+    padding-left: 15px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
 
+}
+.butaoinsano {
+    color: white;
+    background-color:#007BE5;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    font-size: 20px;
+    border: 1px solid #E0E0E0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 437px;
+    padding-right: 400px;
+    margin-right: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
 .caixaprecisadeajuda {
     color: white;
     background-color:rgb(44, 44, 181) ;
@@ -24,4 +124,8 @@
     margin-left: 200px;
     margin-right: 200px;
     border-radius: 20px;
+    margin-top: 20px;
+}
+.ai {
+    text-decoration: none;
 }
