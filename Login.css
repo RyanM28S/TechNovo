@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #3429ff;
+    --secondary-color: #3429ff;
+    --background-color: #f0f2f5;
+    --container-bg: #ffffff;
+    --text-color: #000000;
+    --input-border: #ddd;
+    --input-focus-border: #0012d5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text-color);
+    flex-direction: column;
+}
+
+.login {
+    background-color: var(--container-bg);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.login h1 {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.login p {
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.2);
+}
+
+.botao_login {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    margin-top: 1rem;
+}
+
+.esqueci_c {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.esqueci_c a {
+    color: #1700c2;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: text-decoration 0.3s;
+}
+
+.esquci_c a:hover {
+    text-decoration: underline;
+}
+
+.pagina_pé {
+    position: absolute;
+    bottom: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+}
+#Email {
+    border-radius: 20px;
+}
+#Senha {
+    border-radius: 20px;
+}
