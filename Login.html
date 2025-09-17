@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="Login.css">
 </head>
+
 <body>
     <div id="imagi">
         <img src="img/tech_investment_logo_v1-removebg-preview (1).png" alt="">
@@ -13,17 +15,26 @@
     <div class="login">
         <h1>Login</h1>
         <p>Acesse sua conta para entrar no site.</p>
-        
+
         <form>
+
             <label for="Email">Email</label>
             <input type="email" id="Email" name="Email" placeholder="Digite seu email" required>
-            
-            <label for="Senha">Senha</label>
-            <input type="password" id="Senha" name="Senha" placeholder="Digite sua senha" required>
-            
+            <div>
+                <label for="Senha">Senha</label>
+                <div>
+                    <input type="password" id="Senha" name="Senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="mensagemErro">
+                    <span class="iconeErro">!</span>
+                    <span class="textoErro">Aumente este texto para 6 caracteres ou mais. No momento, você está usando
+                        3 caracteres.</span>
+                </div>
+            </div>
+
             <button type="button" class="botao_login" onclick="fazerLogin()">Entrar</button>
         </form>
-        
+
         <div class="esqueci_c">
             <a onclick="irEsqueciMinhaSenha()">Esqueci minha senha</a>
             <a href="Cadastro.html">Cadastre-se</a>
@@ -31,4 +42,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
