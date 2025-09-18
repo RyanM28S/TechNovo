@@ -9,13 +9,15 @@
 }
 .Caixaminhasenha {
     background-color: white;
+    margin-top: 20px;
     border-radius: 20px;
     text-align: center;
-    margin-left: 150px;
+    margin-left: 280px;
     margin-right: 150px;
-    height: 400px;
+    height:400px;
+    width: 750px;
     font-family: 'Times New Roman', Times, serif;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    
 }
 .Caixaminhasenha img {
     height: 60px;
@@ -53,15 +55,21 @@ margin-left: 20px;
     margin-top: 10px;
 }
 .minhasenhavoltar {
-    background-color: #140de9;
+    background-color: #3d38f5;
     border: none;
     color: white;
     margin-top: 20px;
     font-size: 15px;
     text-align: center;
-    border-radius: 20px;
-    width: 100px;
-    height: 40px;
+    border-radius: 10px;
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+    transition: background 0.3;
+}
+
+.minhasenhavoltar :hover {
+    background: #007BE5;
 }
 .cabeça {
     text-align: center;
@@ -85,43 +93,44 @@ font-size: 14px;
     font-weight: bold;
 }
 .inputemail {
-    margin-right: 500px ;
     border-radius: 8px;
     border: 1px solid #E0E0E0;
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-right: 715px;
+    padding-right: 435px;
     padding-left: 15px;
-    margin-right: 20px;
     text-align: left;
+    margin-left: 10px;
     font-size: 20px;
     margin-top: 10px;
-
 }
 .butaoinsano {
     color: white;
-    background-color:#007BE5;
-    border-radius: 5px;
+    background-color: #3d38f5;
+    border-radius: 9px;
     margin-top: 20px;
     border: none;
     font-size: 20px;
     border: 1px solid #E0E0E0;
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-left: 437px;
-    padding-right: 400px;
-    margin-right: 17px;
+    padding-left: 280px;
+    padding-right: 280px;
+    margin-left: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
 .caixaprecisadeajuda {
     color: white;
-    background-color:rgb(44, 44, 181) ;
-    padding: 40px;
+    background-color: #007BE5 ;
+    height:100px;
+    width: 750px;
     text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 280px;
+    margin-right: 280px;
     border-radius: 20px;
     margin-top: 20px;
+    text-align: center;
+    padding-top: 20px;
 }
 .ai {
     text-decoration: none;
