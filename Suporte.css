@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    
+    height: 130px;
+    width: 120px;
+    margin-left: 250px;
+}
+
+.head {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.BotoesAcesso {
+    border: none;
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.BotoesAcesso2 {
+    border: none;
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 0px 25px 0px 25px;
+    border-radius: 5px;
+}
+body {
+    background-color: rgba(242, 248, 253, 0.874);
+}
+.pagina {
+    margin-top: 30px;
+    margin-left: 300px;
+}
