@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe - TechInvestment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Team Page -->
+    <div class="dashboard-page">
+        <header class="dashboard-header">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-chart-line"></i>
+                    <h1>TechInvestment</h1>
+                </div>
+                
+                <nav class="main-nav">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="profile.html" class="nav-link">Perfil</a>
+                    <a href="team.html" class="nav-link active">Equipe</a>
+                    <a href="collaboration.html" class="nav-link">Colaboração</a>
+                    <a href="support.html" class="nav-link">Suporte</a>
+                </nav>
+
+                <div class="user-menu">
+                    <div class="dropdown">
+                        <button class="user-avatar" onclick="toggleDropdown('user-dropdown-team')">
+                            <span>U</span>
+                        </button>
+                        <div id="user-dropdown-team" class="dropdown-menu">
+                            <a href="profile.html"><i class="fas fa-user"></i> Perfil</a>
+                            <a href="support.html"><i class="fas fa-question-circle"></i> Suporte</a>
+                            <a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            <div class="container">
+                <div class="team-header">
+                    <h2>Nossa Equipe</h2>
+                    <p>Conheça os profissionais dedicados que tornam o TechInvestment uma plataforma confiável e inovadora para seus investimentos</p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-avatar">CE</div>
+                        <h3>Carlos Eduardo</h3>
+                        <div class="team-role">
+                            <i class="fas fa-code"></i>
+                            <span>Frontend Developer</span>
+                        </div>
+                        <p>Especialista em React, TypeScript e design de interfaces modernas. Responsável pela experiência do usuário.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">UI/UX</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:carlos.eduardo@techinvestment.com"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">RM</div>
+                        <h3>Ryan Matos</h3>
+                        <div class="team-role">
+                            <i class="fas fa-server"></i>
+                            <span>Backend Developer</span>
+                        </div>
+                        <p>Desenvolvedor backend com expertise em Node.js, Python e arquitetura de sistemas escaláveis.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">API REST</span>
+                            <span class="skill-tag">Microservices</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:ryan.matos@techinvestment.com"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">GB</div>
+                        <h3>Guilherme Bueno</h3>
+                        <div class="team-role">
+                            <i class="fas fa-database"></i>
+                            <span>Banco de Dados</span>
+                        </div>
+                        <p>Especialista em modelagem de dados, otimização de queries e administração de bancos de dados.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Data Modeling</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:guilherme.bueno@techinvestment.com"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">VS</div>
+                        <h3>Vinicius Santos</h3>
+                        <div class="team-role">
+                            <i class="fas fa-users"></i>
+                            <span>Gerente de Projeto</span>
+                        </div>
+                        <p>Coordena o desenvolvimento, define estratégias e garante a entrega de soluções de qualidade.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Scrum</span>
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Product Management</span>
+                            <span class="skill-tag">Leadership</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:vinicius.santos@techinvestment.com"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="company-info">
+                    <div class="company-card">
+                        <h3>Sobre o TechInvestment</h3>
+                        <p>Somos uma equipe apaixonada por tecnologia e finanças, dedicada a democratizar o acesso aos investimentos através de uma plataforma simples, segura e intuitiva.</p>
+                        <p>Nossa missão é tornar os investimentos acessíveis para todos, independentemente do nível de conhecimento financeiro, fornecendo as ferramentas e informações necessárias para tomar decisões inteligentes.</p>
+                        
+                        <div class="company-stats">
+                            <div class="company-stat">
+                                <div class="stat-number">2024</div>
+                                <div class="stat-label">Ano de Fundação</div>
+                            </div>
+                            <div class="company-stat">
+                                <div class="stat-number">1000+</div>
+                                <div class="stat-label">Usuários Ativos</div>
+                            </div>
+                            <div class="company-stat">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Suporte Disponível</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

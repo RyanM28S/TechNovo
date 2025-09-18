@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TechInvestment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Dashboard Page -->
+    <div class="dashboard-page">
+        <header class="dashboard-header">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-chart-line"></i>
+                    <h1>TechInvestment</h1>
+                </div>
+                
+                <nav class="main-nav">
+                    <a href="dashboard.html" class="nav-link active">Dashboard</a>
+                    <a href="profile.html" class="nav-link">Perfil</a>
+                    <a href="team.html" class="nav-link">Equipe</a>
+                    <a href="collaboration.html" class="nav-link">Colaboração</a>
+                    <a href="support.html" class="nav-link">Suporte</a>
+                </nav>
+
+                <div class="user-menu">
+                    <div class="dropdown">
+                        <button class="user-avatar" onclick="toggleDropdown('user-dropdown')">
+                            <span>U</span>
+                        </button>
+                        <div id="user-dropdown" class="dropdown-menu">
+                            <a href="profile.html"><i class="fas fa-user"></i> Perfil</a>
+                            <a href="support.html"><i class="fas fa-question-circle"></i> Suporte</a>
+                            <a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            <div class="container">
+                <div class="page-header">
+                    <h2>Dashboard</h2>
+                    <p>Acompanhe seus investimentos e metas financeiras</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Saldo Total</span>
+                            <button class="visibility-toggle" onclick="toggleBalance()">
+                                <i id="balance-eye" class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="stat-value" id="total-balance">R$ 11.000,00</div>
+                        <div class="stat-change positive">+20.1% em relação ao mês passado</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Rendimento Mensal</span>
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-value positive">+R$ 180,00</div>
+                        <div class="stat-change">+1.8% este mês</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-title">Investimentos Ativos</span>
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="stat-value">3</div>
+                        <div class="stat-change">Diversificação baixa</div>
+                    </div>
+                </div>
+
+                <div class="investments-section">
+                    <div class="section-header">
+                        <h3>Seus Investimentos</h3>
+                        <p>Acompanhe o desempenho dos seus investimentos</p>
+                    </div>
+                    
+                    <div class="investments-list">
+                        <div class="investment-item">
+                            <div class="investment-info">
+                                <h4>Tesouro Direto</h4>
+                                <p class="investment-value" data-balance="R$ 5.000,00">R$ 5.000,00</p>
+                            </div>
+                            <div class="investment-performance positive">
+                                <span class="performance-value">+2.5%</span>
+                                <span class="performance-period">Últimos 30 dias</span>
+                            </div>
+                        </div>
+
+                        <div class="investment-item">
+                            <div class="investment-info">
+                                <h4>CDB Banco XYZ</h4>
+                                <p class="investment-value" data-balance="R$ 3.200,00">R$ 3.200,00</p>
+                            </div>
+                            <div class="investment-performance positive">
+                                <span class="performance-value">+1.8%</span>
+                                <span class="performance-period">Últimos 30 dias</span>
+                            </div>
+                        </div>
+
+                        <div class="investment-item">
+                            <div class="investment-info">
+                                <h4>Fundo Imobiliário</h4>
+                                <p class="investment-value" data-balance="R$ 2.800,00">R$ 2.800,00</p>
+                            </div>
+                            <div class="investment-performance negative">
+                                <span class="performance-value">-0.5%</span>
+                                <span class="performance-period">Últimos 30 dias</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary">Novo Investimento</button>
+                    <button class="btn btn-outline">Relatório Mensal</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - TechInvestment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Support Page -->
+    <div class="dashboard-page">
+        <header class="dashboard-header">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-chart-line"></i>
+                    <h1>TechInvestment</h1>
+                </div>
+                
+                <nav class="main-nav">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="profile.html" class="nav-link">Perfil</a>
+                    <a href="team.html" class="nav-link">Equipe</a>
+                    <a href="collaboration.html" class="nav-link">Colaboração</a>
+                    <a href="support.html" class="nav-link active">Suporte</a>
+                </nav>
+
+                <div class="user-menu">
+                    <div class="dropdown">
+                        <button class="user-avatar" onclick="toggleDropdown('user-dropdown-support')">
+                            <span>U</span>
+                        </button>
+                        <div id="user-dropdown-support" class="dropdown-menu">
+                            <a href="profile.html"><i class="fas fa-user"></i> Perfil</a>
+                            <a href="support.html"><i class="fas fa-question-circle"></i> Suporte</a>
+                            <a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            <div class="container">
+                <div class="page-header">
+                    <h2>Central de Suporte</h2>
+                    <p>Encontre respostas para suas dúvidas ou entre em contato conosco</p>
+                </div>
+
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" onclick="showSupportTab('faq')">FAQ</button>
+                        <button class="tab-button" onclick="showSupportTab('contact')">Contato</button>
+                        <button class="tab-button" onclick="showSupportTab('status')">Status do Sistema</button>
+                    </div>
+
+                    <div id="faq-support-tab" class="tab-content active">
+                        <div class="faq-section">
+                            <div class="section-header">
+                                <h3>Perguntas Frequentes</h3>
+                                <p>Encontre respostas rápidas para as dúvidas mais comuns</p>
+                            </div>
+                            
+                            <div class="faq-list">
+                                <div class="faq-item">
+                                    <button class="faq-question" onclick="toggleFAQ(this)">
+                                        <span>Como começar a investir?</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Para começar a investir, primeiro você precisa criar uma conta e completar seu perfil. Depois, você pode explorar as opções de investimento disponíveis e escolher aquelas que melhor se adequam ao seu perfil de risco e objetivos financeiros.</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <button class="faq-question" onclick="toggleFAQ(this)">
+                                        <span>Qual o valor mínimo para investir?</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>O valor mínimo varia de acordo com o tipo de investimento. Para a maioria dos produtos, o valor mínimo é de R$ 100,00. Alguns investimentos específicos podem ter valores mínimos diferentes.</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <button class="faq-question" onclick="toggleFAQ(this)">
+                                        <span>Como acompanhar meus investimentos?</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Você pode acompanhar todos os seus investimentos através do dashboard da plataforma. Lá você encontrará informações detalhadas sobre rentabilidade, histórico e projeções dos seus investimentos.</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <button class="faq-question" onclick="toggleFAQ(this)">
+                                        <span>A plataforma é segura?</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Sim, nossa plataforma utiliza as mais avançadas tecnologias de segurança, incluindo criptografia de dados e autenticação de dois fatores. Além disso, somos regulamentados pelos órgãos competentes.</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <button class="faq-question" onclick="toggleFAQ(this)">
+                                        <span>Como fazer o resgate dos investimentos?</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>O resgate pode ser feito diretamente pela plataforma. O prazo para o dinheiro estar disponível em sua conta varia de acordo com o tipo de investimento, podendo ser de 1 a 30 dias úteis.</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item">
+                                    <button class="faq-question" onclick="toggleFAQ(this)">
+                                        <span>Há taxas para usar a plataforma?</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Nossa plataforma não cobra taxa de administração para a maioria dos investimentos. Algumas operações específicas podem ter custos, que são sempre informados antes da confirmação da operação.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="contact-support-tab" class="tab-content">
+                        <div class="contact-section">
+                            <div class="section-header">
+                                <h3>Entre em Contato</h3>
+                                <p>Nossa equipe está pronta para ajudar você</p>
+                            </div>
+                            
+                            <div class="contact-grid">
+                                <div class="contact-info">
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="contact-details">
+                                            <h4>Telefone</h4>
+                                            <p>(11) 4000-0000</p>
+                                            <div class="contact-hours">
+                                                <p><strong>Segunda a Sexta</strong> 8h às 18h</p>
+                                                <p><strong>Sábado</strong> 9h às 14h</p>
+                                                <p><strong>Domingo</strong> Fechado</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="contact-details">
+                                            <h4>Email</h4>
+                                            <p>suporte@techinvestment.com</p>
+                                            <p>Resposta em até 24 horas</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-comments"></i>
+                                        </div>
+                                        <div class="contact-details">
+                                            <h4>Chat Online</h4>
+                                            <p>Disponível durante horário comercial</p>
+                                            <button class="btn btn-outline btn-small">Iniciar Chat</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-form-container">
+                                    <form id="contact-form" onsubmit="handleContactForm(event)">
+                                        <div class="form-group">
+                                            <label for="contact-name">Nome</label>
+                                            <input type="text" id="contact-name" placeholder="Seu nome completo" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="contact-email">Email</label>
+                                            <input type="email" id="contact-email" placeholder="seu@email.com" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="contact-subject">Assunto</label>
+                                            <select id="contact-subject" required>
+                                                <option value="">Selecione um assunto</option>
+                                                <option value="duvida-investimento">Dúvida sobre investimento</option>
+                                                <option value="problema-tecnico">Problema técnico</option>
+                                                <option value="sugestao">Sugestão</option>
+                                                <option value="outro">Outro</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="contact-message">Mensagem</label>
+                                            <textarea id="contact-message" rows="5" placeholder="Descreva sua dúvida ou problema..." required></textarea>
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="status-support-tab" class="tab-content">
+                        <div class="status-section">
+                            <div class="section-header">
+                                <h3>Status do Sistema</h3>
+                                <p>Acompanhe o status dos nossos serviços</p>
+                            </div>
+                            
+                            <div class="status-overview">
+                                <div class="status-indicator operational">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Todos os sistemas operacionais</span>
+                                </div>
+                                <div class="status-last-update">
+                                    Última atualização: 16 de setembro de 2024, 16:45
+                                </div>
+                            </div>
+
+                            <div class="services-status">
+                                <div class="service-item">
+                                    <div class="service-info">
+                                        <div class="service-icon">
+                                            <i class="fas fa-desktop"></i>
+                                        </div>
+                                        <div class="service-details">
+                                            <h4>Plataforma Principal</h4>
+                                            <p>Todos os sistemas operacionais</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-status operational">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Operacional</span>
+                                    </div>
+                                </div>
+
+                                <div class="service-item">
+                                    <div class="service-info">
+                                        <div class="service-icon">
+                                            <i class="fas fa-exchange-alt"></i>
+                                        </div>
+                                        <div class="service-details">
+                                            <h4>API de Investimentos</h4>
+                                            <p>Processamento de transações</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-status operational">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Operacional</span>
+                                    </div>
+                                </div>
+
+                                <div class="service-item">
+                                    <div class="service-info">
+                                        <div class="service-icon">
+                                            <i class="fas fa-chart-bar"></i>
+                                        </div>
+                                        <div class="service-details">
+                                            <h4>Relatórios</h4>
+                                            <p>Geração de relatórios mensais</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-status maintenance">
+                                        <i class="fas fa-wrench"></i>
+                                        <span>Manutenção</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
