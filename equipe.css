@@ -1,6 +1,94 @@
-.comecotop {
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.comecotop img {
-    width: 10rem;
+
+.header {
+    display: flex;
+    height: 130px;
+    width: 120px;
+    margin-left: 250px;
+}
+
+.head {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.BotoesAcesso {
+    border: none;
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #3d38f5;
+    color: white;
+    cursor: pointer;
+    transition: all 2s ease;
+}
+
+.BotoesAcesso:hover {
+    background-color: #080558;
+}
+
+.BotoesAcesso2 {
+    border: none;
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 0px 25px 0px 25px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.BotoesAcesso2:hover {
+    border-bottom: 5px solid #3d38f5;
+}
+body {
+    background-color: rgb(211, 229, 247);
+}
+main h1 {
+    text-align: center;
+}
+main h3 {
+    text-align: center;
+}
+.ryan {
+    background-color: aliceblue;
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    margin-left: 100px;
+}
+.carlos {
+    background-color: aliceblue;
+    margin-left: 100px;
+    border-radius: 6px;
+    width: 300px;
+    height: 300px;
+}
+.vinicius {
+    background-color: aliceblue;
+    margin-left: 100px;
+    border-radius: 6px;
+    width: 300px;
+    height: 300px;
+}
+.guilherme {
+    background-color: aliceblue;
+    margin-left: 100px;
+    border-radius: 6px;
+    width: 300px;
+    height: 300px;
+}
+.profissionais {
+    display: flex;
 }
