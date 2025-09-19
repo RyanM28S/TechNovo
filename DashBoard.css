@@ -27,7 +27,7 @@
     padding: 5px;
     border-radius: 5px;
     font-size: 20px;
-    background-color: #3d38f5;
+    background-color: #007be5;
     color: white;
     cursor: pointer;
     transition: all 2s ease;
@@ -60,4 +60,14 @@ body {
 .pagina {
     margin-top: 30px;
     margin-left: 300px;
+}
+.conteiners {
+    display: flex;
+}
+.caixas {
+    background-color: white;
+    margin-left: 30px;
+    font-size: 40px;
+    padding: 20px;
+    
 }
