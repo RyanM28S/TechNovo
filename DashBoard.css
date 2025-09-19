@@ -54,20 +54,60 @@
 }
 
 body {
-    background-color: rgba(242, 248, 253, 0.874);
+    background-color: rgba(0, 89, 163, 0.874);
 }
 
 .pagina {
     margin-top: 30px;
     margin-left: 300px;
+    font-size: 30px;
 }
 .conteiners {
     display: flex;
+    margin-top: 30px;
 }
 .caixas {
     background-color: white;
-    margin-left: 30px;
-    font-size: 40px;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px ;
+    margin-left: 50px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+.caixas1 {
+    background-color: white;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    margin-left: 300px;
+    border-radius: 20px;
+}
+.caixas h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.caixas1 h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.foco {
+    background-color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 90px;
+    border-radius: 20px;
+    padding: 30px;
+}
+.foco h3 {
+    font-size: 25px;
+}
+.borda {
+    border: 5px solid gray;
     padding: 20px;
-    
+    margin: 25px;
+    border-radius: 20px;
 }
