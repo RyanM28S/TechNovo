@@ -6,11 +6,93 @@
 
 .header {
     display: flex;
-    height: 130px;
+    height: 120px;
     width: 120px;
     margin-left: 250px;
 }
+.gmail .icone {
+    height: 40px;
+    width: 40px;
+    transition: filter 0.3s;
+}
 
+.gmail:hover .icone {
+    content: url('img/gmail2.png');
+}
+.likidin .icone2 {
+    height: 40px;
+    width: 40px;
+    transition: filter 0.3s;
+}
+.likidin:hover .icone2 {
+    content: url('img/linkedin2.png');
+}
+.github .icone3 {
+    height: 40px;
+    width: 40px;
+    transition: filter 0.3s;
+}
+.github:hover .icone3 {
+    content: url('img/github2.png');
+}
+.gmail,
+.likidin,
+.github {
+    border: none;
+    background: none;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    margin: 0 4px;
+    transition: box-shadow 0.2s;
+}
+.botoesgit {
+    display: flex;
+    justify-content: center; 
+    gap: 8px;
+    margin-top: auto;
+    margin-bottom: 20px;  
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.carlos, .vinicius, .guilherme, .ryan {
+    background-color: aliceblue;
+    border-radius: 6px;
+    width: 600px;
+    height: 500px;
+    margin-left: 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);  
+}
+
+.carlos:hover, .vinicius:hover, .guilherme:hover, .ryan:hover {
+    box-shadow: 0 16px 48px rgba(0,0,0,0.18);  
+    transform: translateY(-10px) scale(1.03);  
+}
+.head h1 {
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 40px;
+}
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main h1 {
+margin-top: 80px;
+}
+main h3 {
+    margin-top: 30px;
+}
 .head {
     display: flex;
     position: sticky;
@@ -55,40 +137,128 @@
 body {
     background-color: rgb(211, 229, 247);
 }
+.profissionais img {
+    width: 100px;
+    margin-top: 10px;
+}
 main h1 {
     text-align: center;
 }
 main h3 {
     text-align: center;
+    font-weight: normal;
 }
 .ryan {
     background-color: aliceblue;
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 500px;
     border-radius: 6px;
-    margin-left: 100px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ryan p {
+    font-size: 15px;
+    color: rgb(54, 61, 61);
+}
+.ryan h3 {
+    color: #3d38f5;
+margin-bottom: 10px;
+}
+.vinicius h3 {
+    color: #3d38f5;
+margin-bottom: 10px;
+}
+.carlos h3 {
+    color: #3d38f5;
+margin-bottom: 10px;
+}
+.guilherme h3 {
+    color: #3d38f5;
+margin-bottom: 10px;
 }
 .carlos {
     background-color: aliceblue;
-    margin-left: 100px;
+    margin-left: 20px;
     border-radius: 6px;
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 500px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.carlos p {
+    font-size: 15px;
+    color: rgb(54, 61, 61);
 }
 .vinicius {
     background-color: aliceblue;
-    margin-left: 100px;
+    margin-left: 50px;
     border-radius: 6px;
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 500px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
+.vinicius p {
+    font-size: 15px;
+    color: rgb(54, 61, 61);
+}
+
 .guilherme {
     background-color: aliceblue;
-    margin-left: 100px;
+    margin-left: 50px;
     border-radius: 6px;
-    width: 300px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.guilherme p {
+    font-size: 15px;
+    color: rgb(54, 61, 61);
 }
 .profissionais {
     display: flex;
+}
+.habilidades {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.habilidades span {
+    background-color: rgb(211, 229, 247);
+    color: #080558;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.sobretech {
+    background-color: aliceblue;
+    text-align: center;
+    width: 1000px;
+    width: 900px;
+    margin-left: 370px;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+border-radius: 10px;
+}
+.sobretech h1 {
+    font-weight: normal;
+    color: black;
+}
+.sobretech p {
+    color: rgb(54, 61, 61); ;
+}
+.sobretech h2 {
+    color: #3d38f5;
 }
