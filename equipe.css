@@ -251,6 +251,8 @@ margin-bottom: 10px;
     justify-content: center;
     font-weight: normal;
 border-radius: 10px;
+transition: box-shadow 0.3s, transform 0.3s;
+box-shadow: 0 4px 16px rgba(0,0,0,0.10);
 }
 .sobretech h1 {
     font-weight: normal;
@@ -261,4 +263,8 @@ border-radius: 10px;
 }
 .sobretech h2 {
     color: #3d38f5;
+}
+.sobretech:hover {
+box-shadow: 0 16px 48px rgba(0,0,0,0.18);  
+transform: translateY(-10px) scale(1.03);
 }
