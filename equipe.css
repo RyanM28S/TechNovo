@@ -99,6 +99,7 @@ main h3 {
     top: 0;
     z-index: 1000;
     background-color: white;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.18);  
 }
 
 .BotoesAcesso {

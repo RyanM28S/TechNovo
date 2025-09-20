@@ -22,6 +22,7 @@ body {
     top: 0;
     z-index: 1000;
     background-color: white;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.18);  
 }
 
 .BotoesAcesso {
@@ -63,7 +64,9 @@ body {
     background-color: rgb(211, 229, 247);
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.maesuperior {
+    display: flex;
+}
 .centralsuporte {
     text-align: center;
     font-size: 25px;
@@ -94,7 +97,7 @@ body {
 }
 .chat button {
     background-color: #007be5;
-    width: 300px;
+    width:500px;
     border-radius: 10px;
     height: 40px;
     margin-top: 20px;
@@ -114,9 +117,19 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.18);  
 }
 
+
+.pindividual {
+    color: black;
+}
 .chat p {
     margin-top: 20px;
-
+}
+.p1 {
+    color: rgb(54, 61, 61);
+}
+.p2 {
+    color: rgb(54, 61, 61);
 }
