@@ -10,6 +10,8 @@
     width: 120px;
     margin-left: 250px;
 }
+
+
 .gmail .icone {
     height: 40px;
     width: 40px;
@@ -19,22 +21,27 @@
 .gmail:hover .icone {
     content: url('img/gmail2.png');
 }
+
 .likidin .icone2 {
     height: 40px;
     width: 40px;
     transition: filter 0.3s;
 }
+
 .likidin:hover .icone2 {
     content: url('img/linkedin2.png');
 }
+
 .github .icone3 {
     height: 40px;
     width: 40px;
     transition: filter 0.3s;
 }
+
 .github:hover .icone3 {
     content: url('img/github2.png');
 }
+
 .gmail,
 .likidin,
 .github {
@@ -46,20 +53,25 @@
     outline: none;
     margin: 0 4px;
     transition: box-shadow 0.2s;
+
 }
+
 .botoesgit {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     gap: 8px;
     margin-top: auto;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
     width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
 }
 
-.carlos, .vinicius, .guilherme, .ryan {
+.carlos,
+.vinicius,
+.guilherme,
+.ryan {
     background-color: aliceblue;
     border-radius: 6px;
     width: 600px;
@@ -73,33 +85,42 @@
     flex-direction: column;
     align-items: center;
     transition: box-shadow 0.3s, transform 0.3s;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.10);  
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
 }
 
-.carlos:hover, .vinicius:hover, .guilherme:hover, .ryan:hover {
-    box-shadow: 0 16px 48px rgba(0,0,0,0.18);  
-    transform: translateY(-10px) scale(1.03);  
+.carlos:hover,
+.vinicius:hover,
+.guilherme:hover,
+.ryan:hover {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+    transform: translateY(-10px) scale(1.03);
 }
+
 .head h1 {
-font-family: Arial, Helvetica, sans-serif;
-margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
 }
+
 main {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 main h1 {
-margin-top: 80px;
+    margin-top: 80px;
 }
+
 main h3 {
     margin-top: 30px;
 }
+
 .head {
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 1800px;
     z-index: 1000;
     background-color: white;
-    box-shadow: 0 16px 48px rgba(0,0,0,0.18);  
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
 }
 
 .BotoesAcesso {
@@ -108,16 +129,15 @@ main h3 {
     margin-top: 50px;
     margin-bottom: 25px;
     padding: 5px;
+    background-color: white;
     border-radius: 5px;
     font-size: 20px;
-    background-color: #3d38f5;
-    color: white;
     cursor: pointer;
-    transition: all 2s ease;
+    transition: all 0.1s ease;
 }
 
 .BotoesAcesso:hover {
-    background-color: #080558;
+    border-bottom: 5px solid #3d38f5;
 }
 
 .BotoesAcesso2 {
@@ -132,23 +152,44 @@ main h3 {
     cursor: pointer;
     transition: all 0.1s ease;
 }
+.BotoesAcesso3 {
+    border: none;
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 0px 25px 0px 25px;
+    border-radius: 5px;
+    background-color: #007be5;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 2s ease;
+}
+
+.BotoesAcesso3:hover {
+    background-color: #1914a1;
+}
 .BotoesAcesso2:hover {
     border-bottom: 5px solid #3d38f5;
 }
+
 body {
     background-color: rgb(211, 229, 247);
 }
+
 .profissionais img {
     width: 100px;
     margin-top: 10px;
 }
+
 main h1 {
     text-align: center;
 }
+
 main h3 {
     text-align: center;
     font-weight: normal;
 }
+
 .ryan {
     background-color: aliceblue;
     width: 600px;
@@ -160,26 +201,32 @@ main h3 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .ryan p {
     font-size: 15px;
     color: rgb(54, 61, 61);
 }
+
 .ryan h3 {
     color: #3d38f5;
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 .vinicius h3 {
     color: #3d38f5;
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 .carlos h3 {
     color: #3d38f5;
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 .guilherme h3 {
     color: #3d38f5;
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 .carlos {
     background-color: aliceblue;
     margin-left: 20px;
@@ -190,10 +237,12 @@ margin-bottom: 10px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .carlos p {
     font-size: 15px;
     color: rgb(54, 61, 61);
 }
+
 .vinicius {
     background-color: aliceblue;
     margin-left: 50px;
@@ -204,6 +253,7 @@ margin-bottom: 10px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .vinicius p {
     font-size: 15px;
     color: rgb(54, 61, 61);
@@ -219,13 +269,17 @@ margin-bottom: 10px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .guilherme p {
     font-size: 15px;
     color: rgb(54, 61, 61);
 }
+
 .profissionais {
     display: flex;
+    margin-right: 20px;
 }
+
 .habilidades {
     display: flex;
     gap: 10px;
@@ -242,6 +296,7 @@ margin-bottom: 10px;
     font-size: 15px;
     margin-top: 30px;
 }
+
 .sobretech {
     background-color: aliceblue;
     text-align: center;
@@ -251,21 +306,30 @@ margin-bottom: 10px;
     align-items: center;
     justify-content: center;
     font-weight: normal;
-border-radius: 10px;
-transition: box-shadow 0.3s, transform 0.3s;
-box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    border-radius: 10px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    margin-bottom: 20px;
 }
+
 .sobretech h1 {
     font-weight: normal;
+    padding: 20px;    
     color: black;
 }
+
 .sobretech p {
-    color: rgb(54, 61, 61); ;
+    color: rgb(54, 61, 61);
+    padding: 20px;
+
 }
+
 .sobretech h2 {
+
     color: #3d38f5;
 }
+
 .sobretech:hover {
-box-shadow: 0 16px 48px rgba(0,0,0,0.18);  
-transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+    transform: translateY(-10px) scale(1.03);
 }
