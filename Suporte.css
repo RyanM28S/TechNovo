@@ -85,6 +85,7 @@ body {
 }
 .maesuperior {
     display: flex;
+    margin-left: 20px;
 }
 .centralsuporte {
     text-align: center;
@@ -94,13 +95,14 @@ body {
 }
 
 .centralsuporte img {
+    margin-top: 130px;
     height: 70px;
     border-radius: 55px;
     margin-left: 700px;
 }
 
 .centralsuporte p {
-    margin-top: 20px;
+    margin-top: 150px;
     margin-left: 20px;
 }
 
@@ -108,7 +110,9 @@ body {
     text-align: center;
     font-size: 26px;
     margin-top: 70px;
-    color: rgb(54, 61, 61);
+    color: rgb(53, 60, 60);
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 .chat img {
     height: 70px;
@@ -116,9 +120,9 @@ body {
 }
 .chat button {
     background-color: #007be5;
-    width:500px;
+    width:400px;
     border-radius: 10px;
-    height: 40px;
+    height: 50px;
     margin-top: 20px;
     font-size: 20px;
     color: white;
@@ -129,9 +133,9 @@ body {
 .chat {
     background-color: white;
     height: 300px;
-    width: 600px;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: 500px;
+    margin-left: 35px;
+    margin-right: px;
     margin-top: 20px;
     border-radius: 20px;
     text-align: center;
@@ -152,4 +156,122 @@ body {
 }
 .p2 {
     color: rgb(54, 61, 61);
+}
+.maetodosuporte {
+    display: flex;
+}
+.barradepesquisasuporte {
+    display: flex;
+}
+.divbackgroundperguntas {
+background-color: white;
+height: 600px;
+width: 1040px;
+border-radius: 20px;
+margin-left: 50px;
+margin-top: 30px;
+padding-left: 30px;
+font-family: Arial, Helvetica, sans-serif;
+padding-top: 20px;
+}
+
+.perguntassuporte {
+    display: flex;
+}
+.perguntassuporte p {
+    margin-top: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.perguntassuporte img {
+    height: 30px;
+}
+.encontresuporte {
+    color: rgb(54, 61, 61);
+    margin-top: 13px;
+    font-size: 21px;
+}
+.barrapesquisasuporte {
+    display: flex;
+    margin-top: 30px;
+}
+.barrapesquisasuporte input {
+    border-radius:10px;
+    border-color: rgb(54, 61, 61);
+    padding: 13px;
+    width: 450px;
+    border: 1px solid #b7b7b7;
+    font-size: 18px;
+}
+.barrapesquisasuporte button {
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: white;
+    font-weight: lighter;
+    border: 1px solid #b7b7b7;
+}
+
+.todasbuttonsuporte {
+    margin-left: 20px;
+    height: 50px;
+    width: 80px;
+}
+
+.contabuttonsuporte {
+    margin-left: 15px;
+    height: 50px;
+    width: 80px;
+}
+.investimentobuttonsuporte {
+    margin-left: 20px;
+    width: 140px;
+}
+.contasuporte {
+    display: flex;
+    margin-top: 25px;
+}
+.contasuporte img {
+    height: 28px;
+}
+.contasuporte p {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.divcontasuporte {
+    display: flex;
+    
+    
+}
+.divcontasuporte p {
+    
+}
+
+.primeiralinhasp {
+    width: 4px;
+    height: 100px;
+    margin-left: 40px;
+    margin-top: 10px;
+    background-color:rgb(210, 210, 210);
+    border: none;
+}
+
+.contatodiretodiv {
+    margin-left: 35px;
+    margin-top: 30px;
+    padding-left: 20px;
+    background-color: white;
+    border-radius: 20px;
+    height: 300px;
+    width: 500px;
+}
+
+.statusmensagemdiv {
+    margin-top: 80px;
+    background-color: white;
+    border-radius: 20px;
+    height: 300px;
+    width: 535px;
 }
