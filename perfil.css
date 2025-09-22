@@ -71,24 +71,27 @@ body {
     height: 25px;
     width: 25px;
     text-align: center;
-    margin-top: 2px;
+    margin-top: 6px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .botaoperfil {
     font-size: 20px;
     display: flex;
     margin-left: 1300px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: none;
-    height: 30px;
-    width: 180px;
+    height: 40px;
+    width: 190px;
     text-align: center;
+    border: 1px solid #aea9a9
 
 }
 
 .p1 {
-    padding-top: 5px;
+    padding-top: px;
+  
 }
 
 body {
@@ -96,11 +99,13 @@ body {
 }
 
 .comecinho h1 {
-    font-size: 40px;
+    margin-top: 10px;
+    font-size: 45px;
+    font-weight: normal;
 }
 
 .comecinho p {
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 20px;
 
 }
