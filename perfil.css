@@ -36,16 +36,31 @@ body {
     padding: 5px;
     border-radius: 5px;
     font-size: 20px;
-    background-color: #007be5;
-    color: white;
+    background-color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
-    transition: all 2s ease;
+    transition: all 0.2s ease;
 }
 
 .BotoesAcesso:hover {
-    background-color: #080558;
+    border-bottom: 5px solid #3d38f5;
 }
-
+.BotoesAcesso3 {
+    border: none;
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 0px 25px 0px 25px;
+    border-radius: 5px;
+    background-color: #007be5;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 2s ease;
+}
+.BotoesAcesso3:hover {
+    background-color: #1914a1;
+}
 .BotoesAcesso2 {
     border: none;
     margin-left: 25px;
@@ -63,9 +78,7 @@ body {
     border-bottom: 5px solid #3d38f5;
 }
 
-.comecinho {
 
-}
 
 .iconeperfil {
     height: 25px;
