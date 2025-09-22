@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    height: 130px;
+    width: 120px;
+    margin-left: 250px;
+}
+
+.head {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.head h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+}
+
+body {
+    background-color: rgb(211, 229, 247);
+}
+
+.BotoesAcesso {
+    border: none;
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #007be5;
+    color: white;
+    cursor: pointer;
+    transition: all 2s ease;
+}
+
+.BotoesAcesso:hover {
+    background-color: #080558;
+}
+
+.BotoesAcesso2 {
+    border: none;
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 0px 25px 0px 25px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.BotoesAcesso2:hover {
+    border-bottom: 5px solid #3d38f5;
+}
+
+.comecinho {
+
+}
+
+.iconeperfil {
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+.botaoperfil {
+    font-size: 20px;
+    display: flex;
+    margin-left: 1300px;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    width: 180px;
+    text-align: center;
+
+}
+
+.p1 {
+    padding-top: 5px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.comecinho h1 {
+    font-size: 40px;
+}
+
+.comecinho p {
+    margin-top: 5px;
+    font-size: 20px;
+
+}
