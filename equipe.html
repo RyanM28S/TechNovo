@@ -1,98 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    
+
     <link rel="stylesheet" href="equipe.css">
 </head>
+
 <body>
     <header>
         <div class="head">
             <img class="header" src="img/logo.png" alt="Logo da empresa">
             <h1>TechInvestiment</h1>
-            <button class="BotoesAcesso">DashBoard</button>
-            <button class="BotoesAcesso2">Perfil</button>
+            <button onclick="irDashBoard()" class="BotoesAcesso">DashBoard</button>
+            <button onclick="irPerfil()" class="BotoesAcesso2">Perfil</button>
             <button class="BotoesAcesso3">Equipe</button>
-            <button class="BotoesAcesso2">Suporte</button>
+            <button onclick="irSuporte()" class="BotoesAcesso2">Suporte</button>
         </div>
     </header>
     <main>
         <h1>Nossa Equipe</h1>
-        <h3>Conheça os profissionais dedicados que tornam o TechInvestment uma plataforma confiável e inovadora para seus investimentos</h3>
+        <h3>Conheça os profissionais dedicados que tornam o TechInvestment uma plataforma confiável e inovadora para
+            seus investimentos</h3>
         <div class="profissionais">
             <div class="carlos">
                 <img src="img/carlos.png" alt="FrontEnd">
                 <h2>Carlos</h2>
                 <h3>frontend</h3>
-                <p>Carlos é um profissional de frontend com grande potencial, destacando-se por sua notável capacidade de adaptação. Ele é um membro leal da equipe e um excelente companheiro.</p>
-                 <div class="habilidades">
+                <p>Carlos é um profissional de frontend com grande potencial, destacando-se por sua notável capacidade
+                    de adaptação. Ele é um membro leal da equipe e um excelente companheiro.</p>
+                <div class="habilidades">
                     <span>JavaScript</span>
                     <span>HTML</span>
                     <span>CSS</span>
                 </div>
                 <div class="botoesgit">
                     <button class="gmail">
-                    <img src="img/gmail1.png" alt="icone" class="icone">
-                </button>
-                <button class="likidin">
-                    <img src="img/linkedin1.png" alt="icone" class="icone2">
-                </button>
-                <button class="github">
-                    <img src="img/github1.png" alt="icone" class="icone3">
-                </button>
+                        <img src="img/gmail1.png" alt="icone" class="icone">
+                    </button>
+                    <button class="likidin">
+                        <img src="img/linkedin1.png" alt="icone" class="icone2">
+                    </button>
+                    <button class="github">
+                        <img src="img/github1.png" alt="icone" class="icone3">
+                    </button>
                 </div>
             </div>
             <div class="vinicius">
                 <img src="img/vinicius.png" alt="Gerente">
                 <h2>Vincius Santos</h2>
                 <h3>Gerente</h3>
-                <p>Como gerente, Vinícius é um líder que se adapta e aprende rapidamente. Ele se dedica a ajudar e dar assistência à equipe, sempre buscando a melhor rota para garantir a entrega de um serviço de qualidade dentro do prazo, mesmo que isso exija esforço extra.</p>
-                <div class="habilidades">
-                     <span>JavaScript</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                </div>
-                <div class="botoesgit"  >
-                    <button class="gmail">
-                    <img src="img/gmail1.png" alt="icone" class="icone">
-                </button>
-                <button class="likidin">
-                    <img src="img/linkedin1.png" alt="icone" class="icone2">
-                </button>
-                <button class="github">
-                    <img src="img/github1.png" alt="icone" class="icone3">
-                </button>
-                </div>
-            </div>
-            <div class="guilherme">
-    <img src="img/guilherme.png" alt="Banco de Dados">
-    <h2>Guilherme Bueno</h2>
-    <h3>Banco de Dados</h3>
-    <p>Guilherme é um profissional que sempre contribui para um ambiente de trabalho leve. Ele está sempre em busca de aprimoramento, aprende rápido e ajuda prontamente quem precisa.</p>
-     <div class="habilidades">
-        <span>JavaScript</span>
-        <span>HTML</span>
-        <span>CSS</span>
-    </div>
-    <div class="botoesgit">
-        <button class="gmail">
-            <img src="img/gmail1.png" alt="icone" class="icone">
-        </button>
-        <button class="likidin">
-            <img src="img/linkedin1.png" alt="icone" class="icone2">
-        </button>
-        <button class="github">
-            <img src="img/github1.png" alt="icone" class="icone3">
-        </button>
-    </div>
-</div>
-            <div class="ryan">
-                <img src="img/ryan.png" alt="BackEnd">
-                <h2>Ryan Matos</h2>
-                <h3>BackEnd</h3>
-                <p>Ryan é um desenvolvedor backend criativo e curioso. Ele aprende rápido e está sempre pronto para ajudar a equipe, demonstrando ser um ótimo colega.</p>
+                <p>Como gerente, Vinícius é um líder que se adapta e aprende rapidamente. Ele se dedica a ajudar e dar
+                    assistência à equipe, sempre buscando a melhor rota para garantir a entrega de um serviço de
+                    qualidade dentro do prazo, mesmo que isso exija esforço extra.</p>
                 <div class="habilidades">
                     <span>JavaScript</span>
                     <span>HTML</span>
@@ -100,30 +62,80 @@
                 </div>
                 <div class="botoesgit">
                     <button class="gmail">
-                    <img src="img/gmail1.png" alt="icone" class="icone">
-                </button>
-                <button class="likidin">
-                    <img src="img/linkedin1.png" alt="icone" class="icone2">
-                </button>
-                <button class="github">
-                    <img src="img/github1.png" alt="icone" class="icone3">
-                </button>
+                        <img src="img/gmail1.png" alt="icone" class="icone">
+                    </button>
+                    <button class="likidin">
+                        <img src="img/linkedin1.png" alt="icone" class="icone2">
+                    </button>
+                    <button class="github">
+                        <img src="img/github1.png" alt="icone" class="icone3">
+                    </button>
+                </div>
+            </div>
+            <div class="guilherme">
+                <img src="img/guilherme.png" alt="Banco de Dados">
+                <h2>Guilherme Bueno</h2>
+                <h3>Banco de Dados</h3>
+                <p>Guilherme é um profissional que sempre contribui para um ambiente de trabalho leve. Ele está sempre
+                    em busca de aprimoramento, aprende rápido e ajuda prontamente quem precisa.</p>
+                <div class="habilidades">
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+                <div class="botoesgit">
+                    <button class="gmail">
+                        <img src="img/gmail1.png" alt="icone" class="icone">
+                    </button>
+                    <button class="likidin">
+                        <img src="img/linkedin1.png" alt="icone" class="icone2">
+                    </button>
+                    <button class="github">
+                        <img src="img/github1.png" alt="icone" class="icone3">
+                    </button>
+                </div>
+            </div>
+            <div class="ryan">
+                <img src="img/ryan.png" alt="BackEnd">
+                <h2>Ryan Matos</h2>
+                <h3>BackEnd</h3>
+                <p>Ryan é um desenvolvedor backend criativo e curioso. Ele aprende rápido e está sempre pronto para
+                    ajudar a equipe, demonstrando ser um ótimo colega.</p>
+                <div class="habilidades">
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+                <div class="botoesgit">
+                    <button class="gmail">
+                        <img src="img/gmail1.png" alt="icone" class="icone">
+                    </button>
+                    <button class="likidin">
+                        <img src="img/linkedin1.png" alt="icone" class="icone2">
+                    </button>
+                    <button class="github">
+                        <img src="img/github1.png" alt="icone" class="icone3">
+                    </button>
                 </div>
             </div>
         </div>
-            <div class="sobretech">
-                <h1>Sobre o TechInvestiment</h1>
-                <p>Somos uma equipe apaixonada por tecnologia e finanças, dedicada a democratizar o acesso aos investimentos através de uma plataforma simples, segura e intuitiva.</p>
-                <p>Nossa missão é tornar os investimentos acessíveis para todos, independentemente do nível de conhecimento financeiro, fornecendo as ferramentas e informações necessárias para tomar decisões inteligentes.</p>
-                <h2>2024</h2>
-                <p>Ano de Fundação</p>
+        <div class="sobretech">
+            <h1>Sobre o TechInvestiment</h1>
+            <p>Somos uma equipe apaixonada por tecnologia e finanças, dedicada a democratizar o acesso aos investimentos
+                através de uma plataforma simples, segura e intuitiva.</p>
+            <p>Nossa missão é tornar os investimentos acessíveis para todos, independentemente do nível de conhecimento
+                financeiro, fornecendo as ferramentas e informações necessárias para tomar decisões inteligentes.</p>
+            <h2>2024</h2>
+            <p>Ano de Fundação</p>
 
-                <h2>1000+</h2>
-                <p>Usuarios Ativos</p>
+            <h2>1000+</h2>
+            <p>Usuarios Ativos</p>
 
-                <h2>24/7</h2>
-                <p>Suporte Disponivel</p>
-            </div>
+            <h2>24/7</h2>
+            <p>Suporte Disponivel</p>
+        </div>
     </main>
+    <script src="script.js"></script>
 </body>
+
 </html>

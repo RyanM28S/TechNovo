@@ -11,7 +11,7 @@ body {
 
 .header {
     display: flex;
-    height: 130px;
+    height: 120px;
     width: 120px;
     margin-left: 250px;
 }
@@ -23,11 +23,15 @@ body {
     padding: 0px 25px 0px 25px;
     border-radius: 5px;
     background-color: #007be5;
+    color: white;
     font-size: 20px;
     cursor: pointer;
     transition: all 2s ease;
 }
-
+.head h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+}
 .BotoesAcesso3:hover {
     background-color: #1914a1;
 }
@@ -55,7 +59,7 @@ body {
 }
 
 .BotoesAcesso:hover {
-    border-bottom: 5px solid #3d38f5;
+    border-bottom: 5px solid #007be5;
 }
 
 .BotoesAcesso2 {
@@ -72,7 +76,7 @@ body {
 }
 
 .BotoesAcesso2:hover {
-    border-bottom: 5px solid #3d38f5;
+    border-bottom: 5px solid #007be5;
 }
 
 body {
