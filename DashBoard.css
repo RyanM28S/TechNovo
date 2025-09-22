@@ -6,17 +6,23 @@
 
 .header {
     display: flex;
-    height: 130px;
+    height: 120px;
     width: 120px;
     margin-left: 250px;
 }
 
 .head {
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 1800px;
     z-index: 1000;
     background-color: white;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+}
+.head h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
 }
 
 .BotoesAcesso {
@@ -49,12 +55,14 @@
     cursor: pointer;
     transition: all 0.1s ease;
 }
+
 .BotoesAcesso2:hover {
     border-bottom: 5px solid #3d38f5;
 }
 
 body {
-    background-color: rgba(0, 89, 163, 0.874);
+    background-color: rgb(211, 229, 247);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .pagina {
@@ -62,38 +70,44 @@ body {
     margin-left: 300px;
     font-size: 30px;
 }
+
 .conteiners {
     display: flex;
     margin-top: 30px;
 }
+
 .caixas {
     background-color: white;
     font-size: 30px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 20px ;
+    padding-top: 20px;
     margin-left: 50px;
     border-radius: 20px;
     padding-bottom: 20px;
 }
+
 .caixas1 {
     background-color: white;
     font-size: 30px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 20px ;
+    padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 300px;
     border-radius: 20px;
 }
+
 .caixas h2 {
     font-size: 30px;
     padding-bottom: 20px;
 }
+
 .caixas1 h2 {
     font-size: 30px;
     padding-bottom: 20px;
 }
+
 .foco {
     background-color: white;
     margin-left: 300px;
@@ -102,9 +116,11 @@ body {
     border-radius: 20px;
     padding: 30px;
 }
+
 .foco h3 {
     font-size: 25px;
 }
+
 .borda {
     border: 5px solid gray;
     padding: 20px;
