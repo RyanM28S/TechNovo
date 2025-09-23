@@ -6,7 +6,7 @@
 
 .header {
     display: flex;
-    height: 130px;
+    height: 120px;
     width: 120px;
     margin-left: 250px;
 }
@@ -17,6 +17,7 @@
     top: 0;
     z-index: 1000;
     background-color: white;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
 }
 
 .head h1 {
@@ -45,6 +46,7 @@ body {
 .BotoesAcesso:hover {
     border-bottom: 5px solid #3d38f5;
 }
+
 .BotoesAcesso3 {
     border: none;
     margin-left: 25px;
@@ -58,9 +60,11 @@ body {
     cursor: pointer;
     transition: all 2s ease;
 }
+
 .BotoesAcesso3:hover {
     background-color: #1914a1;
 }
+
 .BotoesAcesso2 {
     border: none;
     margin-left: 25px;
@@ -99,12 +103,11 @@ body {
     width: 190px;
     text-align: center;
     border: 1px solid #aea9a9
-
 }
 
 .p1 {
     padding-top: px;
-  
+
 }
 
 body {
