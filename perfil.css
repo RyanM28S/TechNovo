@@ -10,28 +10,27 @@
     width: 120px;
     margin-left: 250px;
 }
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
 .head {
     display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: white;
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .head h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 40px;
+    font-size: 24px;
     font-weight: bold;
-}
-main {
-    background-color: rgb(211, 229, 247);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding-left: 60px;
-    font-size: larger;
-    margin-top: 20px;
 }
 
 .BotoesAcesso {
@@ -40,34 +39,15 @@ main {
     margin-top: 50px;
     margin-bottom: 25px;
     padding: 5px;
+    background-color: white;
     border-radius: 5px;
     font-size: 20px;
-    background-color: white;
-    color: rgb(0, 0, 0);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
 }
 
 .BotoesAcesso:hover {
-    border-bottom: 5px solid #3d38f5;
-}
-
-.BotoesAcesso3 {
-    border: none;
-    margin-left: 25px;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    padding: 0px 25px 0px 25px;
-    border-radius: 5px;
-    background-color: #007be5;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 2s ease;
-}
-
-.BotoesAcesso3:hover {
-    background-color: #1914a1;
+    border-bottom: 5px solid #0f00e5;
 }
 
 .BotoesAcesso2 {
@@ -84,55 +64,249 @@ main {
 }
 
 .BotoesAcesso2:hover {
-    border-bottom: 5px solid #3d38f5;
+    border-bottom: 5px solid #0f00e5;
 }
-
-
-
-.iconeperfil {
-    height: 25px;
-    width: 25px;
-    text-align: center;
-    margin-top: 6px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.botaoperfil {
-    font-size: 20px;
-    display: flex;
-    margin-left: 1300px;
-    border-radius: 15px;
+.BotoesAcesso3 {
     border: none;
-    height: 40px;
-    width: 210px;
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 5px 25px 5px 25px;
+    border-radius: 5px;
+    background-color: #007be5;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 2s ease;
+}
+
+.BotoesAcesso3:hover {
+    background-color: #1914a1;
+}
+main {
+    padding: 20px 50px;
+}
+
+.comecinho {
     text-align: center;
-    border: 1px solid #aea9a9
-}
-
-.p1 {
-    padding-top: px;
-
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
 }
 
 .comecinho h1 {
-    margin-top: 10px;
-    font-size: 45px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: #0f00e5;
 }
 
 .comecinho p {
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #555;
 }
-#btnEditarNome {
-    font-size: x-large;
-    height: 60px;
+.caixa_informacoes_perfil {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.caixa_informacoes_perfil h2 {
+    font-size: 24px;
+    color: #0f00e5;
+    margin-bottom: 10px;
+}
+
+.caixa_informacoes_perfil label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.caixa_informacoes_perfil input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn-secao {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secao img {
+    margin-right: 10px;
+}
+.estatisticas, .contato {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.estatisticas h1, .contato h1 {
+    font-size: 24px;
+    color: #0f00e5;
+    margin-bottom: 10px;
+}
+
+.estatisticas p, .contato p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.estatisticas img, .contato img {
+    margin-right: 10px;
+}
+#edit {
+    display: flex;
+}
+.iconeedit {
+    margin-left: 1150px;
+}
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixa_informacoes_perfil {
+        padding: 10px;
+    }
+
+    .btn-secao {
+        width: 100%;
+        text-align: center;
+    }
+}
+.contato {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contato h1 {
+    font-size: 24px;
+    color: #0f00e5;
+    margin-bottom: 20px;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contato-info p {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icone-contato {
+    width: 20px;
+    height: 20px;
+}
+.notificacoes {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.notificacoes h1 {
+    font-size: 24px;
+    color: #0f00e5;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.notificacoes p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.opcoes-notificacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.opcao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #0f00e5;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+#btnMostrarSenha {
+    cursor: pointer;
+    font-size: larger;
+}
+.botaoperfil {
+    justify-content: center;
+
 }
