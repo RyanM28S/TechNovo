@@ -267,7 +267,10 @@ main {
 
 
 .switch input {
-
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
 .comecinho p {
     margin-top: 10px;
     font-size: 20px;
