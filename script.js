@@ -108,7 +108,7 @@ function irTezte() {
     window.location.href = 'tezte.html'
 }
 function irEsqueciMinhaSenha() {
-    window.location.href = 'EsqueciMinhaSenha'
+    window.location.href = 'EsqueciMinhaSenha.html'
 }
 const btnCriarConta = document.getElementById('btnCriarConta');
 if (btnCriarConta) {
@@ -193,4 +193,8 @@ if (btnMostrarSenha && inputSenhaPerfil) {
             btnMostrarSenha.querySelector('.p1').textContent = 'Mostrar Dados';
         }
     });
+}
+function enviarIns() {
+    const email = document.getElementById('emailEsqueci').value;
+    
 }
