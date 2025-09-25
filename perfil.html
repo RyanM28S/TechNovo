@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>perfil</title>
     <link rel="stylesheet" href="perfil.css">
 </head>
+
 <body>
     <header>
         <div class="head">
@@ -24,34 +26,35 @@
                 <p>Gerencie suas informações pessoais e preferências</p>
             </div>
             <div>
-                <button class="botaoperfil">
-                <img  src="img/olho-aberto.png" alt="icone" class="iconeperfil"> <p class="p1">Mostra Dados</p>
-                </button>   
+                <button id="btnMostrarSenha" class="botaoperfil">
+                    <img src="img/olho-aberto.png" alt="icone" class="iconeperfil">
+                    <p class="p1">Mostra Dados</p>
+                </button>
             </div>
         </div>
         <div class="caixa_informacoes_perfil">
             <div>
-            <p>Informações Pessoais</p>
-            <p>Mantenha seus dados sempre atualizados</p>
+                <p>Informações Pessoais</p>
+                <p>Mantenha seus dados sempre atualizados</p>
             </div>
             <div>
-            <button id="btnEditarNome" readonly>
-                <img src="img/logo lapis.png" alt="icone" class="iconeedita"> Editar Perfil
-            </button>
+                <button id="btnEditarNome" readonly>
+                    <img src="img/logo lapis.png" alt="icone" class="iconeedita"> Editar Perfil
+                </button>
             </div>
             <div class="linha1">
                 <label for="nomeperfil">Nome Completo</label>
-            <input  type="text" id="seuNome" class="nomeperfil">
-            <label for="telefoneperfil">Telefone</label>
-            <input type="text" class="telefoneperfil">
-            <label for="datadenacimento">Data de Nascimento</label>
-            <input type="date" name="" class="datadenacimento">
+                <input type="text" id="seuNome" class="nomeperfil">
+                <label for="telefoneperfil">Telefone</label>
+                <input type="text" class="telefoneperfil">
+                <label for="datadenacimento">Data de Nascimento</label>
+                <input type="date" name="" class="datadenacimento">
             </div>
             <div class="linha2">
                 <label for="emailperfil">Email</label>
-                <input type="email" class="emailperfil">
-                <label for="senhaperfil">CPF</label>
-                <input type="password" class="senhaperfil">
+                <input id="emailPerfil" type="email" class="emailperfil">
+                <label for="senhaperfil">Senha</label>
+                <input id="senhaPerfil" type="password" class="senhaperfil">
                 <label for="cpf">Endereço</label>
                 <input type="password" class="cpf">
             </div>
@@ -102,7 +105,7 @@
             </div>
         </div>
         <div>
-           <h1> Informações de Contato</h1>
+            <h1> Informações de Contato</h1>
             <div>
                 <p><img src="img/logo correspondencia.png" alt="icone">joao.silva@email.com</p>
                 <p><img src="img/logo telefone.png" alt="">4002-8922</p>
@@ -112,4 +115,5 @@
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>

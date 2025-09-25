@@ -192,3 +192,25 @@
     background: #f6f7f8;
     margin-bottom: 10px;
 }
+.mensagemErro {
+  display: none; 
+  background-color: #333;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 10px;
+  position: relative;
+  font-size: 14px;
+}
+.mensagemErro.show {
+  display: flex; 
+  align-items: center;
+}
+.iconeErro {
+  font-size: 18px;
+  color: orange;
+  margin-right: 8px;
+}
+.input-erro {
+    border: 2px solid #ff3333 !important;
+}
