@@ -320,7 +320,7 @@ margin-top: 20px;
     border-radius:10px;
     border-color: rgb(54, 61, 61);
     padding: 13px;
-    width: 450px;
+    width: 435px;
     border: 1px solid #b7b7b7;
     font-size: 18px;
     margin-top: 10px;
@@ -343,4 +343,28 @@ margin-top: 20px;
     font-size: 16px;
     margin-top: 20px;
     text-align: center;
+}
+.platdiv {
+    display: flex;
+}
+.platdiv img {
+    height: 30px;
+    margin-top: 33px;
+    margin-left: 200px;
+}
+.platdiv2 {
+    display: flex;
+}
+.platdiv2 img {
+    height: 30px;
+    margin-top: 33px;
+    margin-left: 160px;
+}
+.platdiv3 {
+    display: flex;
+}
+.platdiv3 img {
+    height: 30px;
+    margin-top: 33px;
+    margin-left: 135px;
 }
