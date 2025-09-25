@@ -196,5 +196,17 @@ if (btnMostrarSenha && inputSenhaPerfil) {
 }
 function enviarIns() {
     const email = document.getElementById('emailEsqueci').value;
-    
+    if (!email) {
+        alert('Por favor, digite seu e-mail.');
+        return;
+    }
+
+    const assunto = encodeURIComponent('Solicitação de Entrevista - [ Nome da Empresa ]');
+    const corpo = encodeURIComponent(
+        `Prezado [Vinicius Santos Camelo],\n\nGostaria de expressar meu interesse em uma oportunidade de entrevista. Agradeceria se pudesse confirmar seus dados para contato e sugerir uma data e horário convenientes.\n\nAtenciosamente,\n\n[Nome do Interessado]`
+    );
+    const mailtoLink = `mailto:${email}?subject=${assunto}&body=${corpo}`;
+    console.log(mailtoLink);
+
+    window.location.href = mailtoLink;
 }
