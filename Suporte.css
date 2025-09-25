@@ -282,8 +282,8 @@ margin-top: 20px;
     margin-top: 20px;
     background-color: white;
     border-radius: 20px;
-    height: 300px;
-    width: 520px;
+    height: 320px;
+    width: 500px;
     padding-left: 30px;
     padding-top: 24px;
     margin-left: 35px;
@@ -308,7 +308,7 @@ margin-top: 20px;
     color: rgb(167, 167, 167);
     padding-right: 40px;
     font-size: 20px;
-    font-family: "Nunito Sans", sans-serif;;
+    font-family: "Nunito Sans", sans-serif;
 }
 .nomecontatodireto {
     font-size:19px;
@@ -330,6 +330,7 @@ margin-top: 20px;
     color: #919191;
     font-size: 18px;
     margin-top: 35px;
+    font-family: "Nunito Sans", sans-serif;
 }   
 .linhastatus{
     margin-top: 20px;
