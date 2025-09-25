@@ -108,7 +108,6 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
-
 .caixa_informacoes_perfil h2 {
     font-size: 24px;
     color: #0f00e5;
@@ -170,7 +169,17 @@ main {
 }
 .iconeedit {
     margin-left: 1150px;
+    border: 1px solid #888;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 3s;
 }
+.iconeedit :active{
+    content: url('img/logo\ salva.png');
+}
+
 @media (max-width: 768px) {
     .head {
         flex-direction: column;
@@ -207,6 +216,8 @@ main {
     align-items: center;
     gap: 10px;
 }
+
+
 
 .contato-info p {
     font-size: 16px;
@@ -324,9 +335,19 @@ input:checked + .slider:before {
     font-size: larger;
 }
 .botaoperfil {
-    justify-content: center;
-    transition: 1s;
-    border-radius: 34px;
+    border: 1px solid #888;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 3s;
+}
+.botaoperfil img {
+    width: 50px;
+    height: 50px ;
+}
+.botaoperfil :active {
+    content: url('img/icone\ olho\ fechado.png');
 }
 .slider::before {
     content: '';
