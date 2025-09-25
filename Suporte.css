@@ -282,8 +282,8 @@ margin-top: 20px;
     margin-top: 20px;
     background-color: white;
     border-radius: 20px;
-    height: 300px;
-    width: 520px;
+    height: 320px;
+    width: 500px;
     padding-left: 30px;
     padding-top: 24px;
     margin-left: 35px;
@@ -308,7 +308,7 @@ margin-top: 20px;
     color: rgb(167, 167, 167);
     padding-right: 40px;
     font-size: 20px;
-    font-family: "Nunito Sans", sans-serif;;
+    font-family: "Nunito Sans", sans-serif;
 }
 .nomecontatodireto {
     font-size:19px;
@@ -320,7 +320,7 @@ margin-top: 20px;
     border-radius:10px;
     border-color: rgb(54, 61, 61);
     padding: 13px;
-    width: 450px;
+    width: 435px;
     border: 1px solid #b7b7b7;
     font-size: 18px;
     margin-top: 10px;
@@ -330,6 +330,7 @@ margin-top: 20px;
     color: #919191;
     font-size: 18px;
     margin-top: 35px;
+    font-family: "Nunito Sans", sans-serif;
 }   
 .linhastatus{
     margin-top: 20px;
@@ -342,4 +343,28 @@ margin-top: 20px;
     font-size: 16px;
     margin-top: 20px;
     text-align: center;
+}
+.platdiv {
+    display: flex;
+}
+.platdiv img {
+    height: 30px;
+    margin-top: 33px;
+    margin-left: 200px;
+}
+.platdiv2 {
+    display: flex;
+}
+.platdiv2 img {
+    height: 30px;
+    margin-top: 33px;
+    margin-left: 160px;
+}
+.platdiv3 {
+    display: flex;
+}
+.platdiv3 img {
+    height: 30px;
+    margin-top: 33px;
+    margin-left: 135px;
 }
