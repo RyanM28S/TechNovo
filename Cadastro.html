@@ -22,30 +22,36 @@
             <h4>Junte-se a milhares de investidores inteligentes</h4>
             <div class="texto">
                 <label for="nomecompleto">Nome Completo</label>
-                <input type="text" class="nomecompleto" placeholder="Seu nome completo">
+                <input id="nomeCadastro" type="text" class="nomecompleto" placeholder="Seu nome completo">
             </div>
             <div class="texto">
                 <label for="gmail">E-mail</label>
-                <input type="email" class="gmail" placeholder="Seu@email.com">
+                <input id="emailCadastro" type="email" class="gmail" placeholder="Seu@email.com">
             </div>
             <div class="texto">
                 <label for="senha">Senha</label>
-                <input type="password" class="senha" placeholder="Crie uma senha segura">
+                <input id="senhaCadastro" type="password" class="senha" placeholder="Crie uma senha segura">
             </div>
             <div class="texto">
                 <label for="confirmarsenha">Confirmar Senha</label>
-                <input type="password" class="confirmarsenha" placeholder="Confirme sua senha">
+                <input id="confirmaCadastro" type="password" class="confirmarsenha" placeholder="Confirme sua senha">
             </div>
             <div class="check">
                 <input type="checkbox" class="aceitartermos" id="aceitartermos">
-                <label for="aceitartermos" class="labelace">Aceito os termos de uso e política de privacidade</label>
+                <label for="aceitartermos" class="labelace">Aceito os termos de uso e política de
+                    privacidade</label>
             </div>
-            <button onclick="irDashBoard()" class="criarconta" id="btnCriarConta">Criar Conta</button>
-            <p class="jatem">Já tem uma conta?<a href="" class="alink"> Faça login aqui</a></p>
+            <button onclick="fazerCadastro()" class="criarconta" id="btnCriarConta">Criar Conta</button>
+            <p class="jatem">Já tem uma conta?<a href="Login.html" class="alink"> Faça login aqui</a></p>
+            <div class="mensagemErro">
+                <span class="iconeErro">!</span>
+                <span class="textoErro">Aumente este texto para 6 caracteres ou mais. No momento, você está usando
+                    3 caracteres.</span>
+            </div>
         </div>
-        </div>
+
     </main>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
