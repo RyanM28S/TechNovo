@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -25,25 +25,22 @@
                 <h1>Meu Perfil</h1>
                 <p>Gerencie suas informações pessoais e preferências</p>
             </div>
+            <br>
             <div>
                 <button id="btnMostrarSenha" class="botaoperfil">
-                    <img src="img/olho-aberto.png" alt="icone" class="iconeperfil">
-                    <p class="p1">Mostra Dados</p>
+                    <img src="img/olho-aberto.png" alt="icone" class="iconeperfil" height="30">
+                    <p class="p1">Mostrar Dados</p>
                 </button>
             </div>
         </div>
         <div class="caixa_informacoes_perfil">
-            <div>
+            <div id="edit">
                 <h2>Informações Pessoais</h2>
-                <p>Mantenha seus dados sempre atualizados</p>
-            </div>
-            <br>
-            <div>
-                <button id="btnEditarNome" readonly>
-                    <img src="img/logo lapis.png" alt="icone" class="iconeedita" height="30"> Editar Perfil
+                <button id="btnMostrarSenha" class="iconeedit">
+                    <img src="img/logo lapis.png" alt="icone" height="30"> Editar Perfil
                 </button>
             </div>
-            <br>
+            <p>Mantenha seus dados sempre atualizados</p><br>
             <div class="linha1">
                 <label for="nomeperfil">Nome Completo</label>
                 <input type="text" id="seuNome" class="nomeperfil">
@@ -58,19 +55,21 @@
                 <label for="senhaperfil">Senha</label>
                 <input id="senhaPerfil" type="password" class="senhaperfil">
                 <label for="cpf">Endereço</label>
-                <input type="password" class="cpf">
+                <input type="text" class="cpf">
             </div>
         </div>
-        <div>
-            <br>
-            <button id="btnEditarNome">
+        <div class="secao">
+            <button id="btnEditarNome" class="btn-secao">
                 <img src="img/logo escudo.png" alt="icone" height="30"> Segurança
-            </button><br>
-            <br>
-            <p>Configure suas preferências de segurança</p>
-            <p>Autenticação de dois fatores</p>
-            <p>Adicione uma camada extra de segurança</p>
+            </button>
+            <p>Configure suas preferências de segurança.</p><br>
+            <p>Autenticação de dois fatores.</p>
+            <p>Adicione uma camada extra de segurança.</p>
             <hr>
+
+            <button id="btnEditarNome2" class="btn-secao">Alterar Senha</button>
+            <button id="btnEditarNome2" class="btn-secao">Dispositivos Conectados</button>
+            <button id="btnEditarNome2" class="btn-secao">Histórico de Login</button>
             <label class="toggle-switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
@@ -79,46 +78,61 @@
             <button>Dispositivos Conectados</button>
             <button>Historico de Login</button>
         </div>
-        <br>
-        <div>
-            <button id="btnEditarNome">
-                <img src="img/logo notificacao.png" alt="icone" height="30"> Notificaçãoes
-            </button>
+        <div class="notificacoes">
+            <h1>Notificações</h1>
             <p>Escolha como deseja receber atualizações</p>
-
+            <div class="opcoes-notificacoes">
+                <div class="opcao">
+                    <span>E-mail</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="opcao">
+                    <span>SMS</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="opcao">
+                    <span>Push</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="opcao">
+                    <span>Relatórios</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="" alt="">
-            <p></p>
-            <p></p>
-            <p></p>
-        </div>
-
-        <div>
+        <div class="estatisticas">
             <h1>Estatísticas Rápidas</h1>
             <div>
-                <p>
-                    <img src="img/logo pessoa.png" alt="icone">Membro desde
-                </p>
-                <p>
-                    <img src="img/logo escudo.png" alt="icone"> Nível de Segurança
-                </p>
-                <p>
-                    <img src="img/logo notificacao.png" alt="icone"> Notificações Ativas
-                </p>
-            </div>
-            <div>
-                <p>Jan 2024</p>
-                <p>Alto</p>
-                <p>3</p>
+                <button id="btnAlterarSenha" class="btn-secao">
+                    <img src="img/logo pessoa.png" alt="icone" height="30"> Membro desde
+                </button>
+                <button id="btnDispositivos" class="btn-secao">
+                    <img src="img/logo escudo.png" alt="icone" height="30"> Nível de Segurança
+                </button>
+                <button id="btnHistoricoLogin" class="btn-secao">
+                    <img src="img/logo notificacao.png" alt="icone" height="30"> Notificações Ativas
+                </button>
             </div>
         </div>
-        <div>
-            <h1> Informações de Contato</h1>
-            <div>
-                <p><img src="img/logo correspondencia.png" alt="icone">joao.silva@email.com</p>
-                <p><img src="img/logo telefone.png" alt="">4002-8922</p>
-                <p><img src="img/logo local.png" alt="">São Paulo, SP</p>
+        <div class="contato">
+            <h1>Informações de Contato</h1>
+            <div class="contato-info">
+                <p><img src="img/logo correspondencia.png" alt="Email ícone" class="icone-contato"> joao.silva@email.com
+                </p>
+                <p><img src="img/logo telefone.png" alt="Telefone ícone" class="icone-contato"> (11) 99999-9999</p>
+                <p><img src="img/logo local.png" alt="Localização ícone" class="icone-contato"> São Paulo, SP</p>
             </div>
         </div>
     </main>
