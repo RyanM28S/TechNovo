@@ -69,6 +69,7 @@ body {
     margin-top: 30px;
     margin-left: 300px;
     font-size: 30px;
+    margin-top: 170px;
 }
 
 .conteiners {
@@ -76,37 +77,63 @@ body {
     margin-top: 30px;
 }
 
-.caixas {
-    background-color: white;
-    font-size: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    margin-left: 50px;
-    border-radius: 20px;
-    padding-bottom: 20px;
-}
 
 .caixas1 {
     background-color: white;
-    font-size: 30px;
+    font-size: 20px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 150px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 300px;
-    border-radius: 20px;
-}
-
-.caixas h2 {
-    font-size: 30px;
-    padding-bottom: 20px;
+    border-radius: 15px;
 }
 
 .caixas1 h2 {
-    font-size: 30px;
+    font-size: 15px;
     padding-bottom: 20px;
 }
+.caixas2 {
+    background-color: white;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 150px;
+    border-radius: 15px;
+}
+
+.caixas2 h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.caixas2 h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.caixas3 {
+    background-color: white;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 150px;
+    border-radius: 15px;
+}
+
+.caixas3 h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.caixas3 h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
 
 .foco {
     background-color: white;
@@ -126,4 +153,8 @@ body {
     padding: 20px;
     margin: 25px;
     border-radius: 20px;
+}
+#p7 {
+    border: none;
+    font-size: 30px;    
 }
