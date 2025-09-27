@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicial</title>
     <link rel="stylesheet" href="DashBoard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -22,7 +23,13 @@
     </header>
     <main class="main">
         <div class="pagina">
-            <h2>DashBoard</h2>
+            <div class="botaot">
+                <h2>DashBoard</h2>
+                <button  class="botaoperfil">
+                    <img src="img/icone olho.png" alt="icone" class="iconeperfil">
+                </button>
+            </div>
+            
             <p>Acompanhe seus investimentos em tempo real</p>
         </div>
         <div class="conteiners">
@@ -32,12 +39,16 @@
                     <img src="img/icone dinheirinho.png" alt="icone">
                 </div>
                 <strong><p class="p1">R$ 20.000</p></strong>
-                <p class="p2">+2.1% este mes</p>
+                <div class="caixa1m">
+                    <p class="p21">+2.1% este mes</p>
+                    
+                </div>
+                
             </div>
             <div class="caixas2">
                 <div class="c2">
                     <h2>Rentabilidade</h2>
-                    <img src="img/icone seta para cima.png" alt="">
+                    <img src="img/icone seta para cima.png" alt="icone" class="seta1">
                 </div>
                 <strong><p class="p1">+12.5%</p></strong>
                 <p class="p2">Ultimos 12 meses</p>
@@ -51,60 +62,41 @@
                 <img src="img/logolinhadashboard.png" alt="logolinha" class="barraporcentagem">
             </div>
         </div>
-
-        <div class="foco">
-            <h3>Meus investimentos</h3>
-            <section class="borda">
-                <form>
-                    <select name="pergunta7" id="p7">
-                        <option value="hider">hider</option>
-                        <option value="philco">philco</option>
-                        <option value="doritus">doritus</option>
-                        <option value="lacoste">lacoste</option>
-                    </select>
-                </form>
-            </section>
-            <section class="borda">
-                <form>
-                    <select name="pergunta7" id="p7">
-                        <option value="hider">hider</option>
-                        <option value="philco">philco</option>
-                        <option value="doritus">doritus</option>
-                        <option value="lacoste">lacoste</option>
-                    </select>
-                </form>
-            </section>
-            <section class="borda">
-                <form>
-                    <select name="pergunta7" id="p7">
-                        <option value="hider">hider</option>
-                        <option value="philco">philco</option>
-                        <option value="doritus">doritus</option>
-                        <option value="lacoste">lacoste</option>
-                    </select>
-                </form>
-            </section>
-            <section class="borda">
-                <form>
-                    <select name="pergunta7" id="p7">
-                        <option value="hider">hider</option>
-                        <option value="philco">philco</option>
-                        <option value="doritus">doritus</option>
-                        <option value="lacoste">lacoste</option>
-                    </select>
-                </form>
-            </section>
-            <section class="borda">
-                <form>
-                    <select name="pergunta7" id="p7">
-                        <option value="hider">hider</option>
-                        <option value="philco">philco</option>
-                        <option value="doritus">doritus</option>
-                        <option value="lacoste">lacoste</option>
-                    </select>
-                </form>
-            </section>
+        <div class="opmae">
+            <div class="titulopizza">
+                <img src="img/grafico-de-pizza (1).png" alt="icone">
+                <h1>Meus investimentos</h1>
+                
+            </div>
+            
+            <h3>Resumo da sua carteira</h3>
+            <div class="op1">
+                <h2>Tesouro direto</h2>
+                <p>R$5.000</p>
+            </div>
+            <div class="op2">
+                <h2>CDB</h2>
+                <p>R$2.500</p>
+            </div>
+            <div class="op3">
+                <h2>Cripto Moedas</h2>
+                <p>R$1.800</p>
+            </div>
+            <div class="op4">
+                <h2>Açoes</h2>
+                <p>R$3.000</p>
+            </div>
         </div>
+        <div class="ultimo">
+            <h2>Ações Rápidas</h2>
+            <div>
+                <button>↗ Novo Investimento</button>
+            </div>
+            <div>
+                <button>$ Retirar Investimento</button>
+            </div>
+        </div>
+           
     </main>
     <footer></footer>
     <script src="script.js"></script>

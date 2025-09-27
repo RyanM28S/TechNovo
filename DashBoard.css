@@ -9,6 +9,80 @@
     width: 120px;
     margin-left: 250px;
 }
+.p21 {
+    color: green;
+}
+.titulopizza {
+    display: flex;
+}
+.titulopizza h1 {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.titulopizza img {
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.opmae {
+    background: white;
+    margin-top: 20px;
+    height: 500px;
+    width: 1600px;
+    margin-left: 30px;
+    border-radius:10px ;
+}
+.opmae h1 {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.opmae h3 {
+     color: rgb(122, 122, 121);
+     font-style: normal;
+     margin-top: 10px;
+     margin-left: 25px;
+
+}
+.op1,.op2,.op3,.op4 {
+    display: flex;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out; 
+    cursor: pointer;
+}
+.op1:hover, .op2:hover, .op3:hover, .op4:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    border-color: #A0A0A0; 
+}
+.op1 H2,.op2 h2,.op3 h2,.op4 h2{
+margin-left: 10px;
+}
+.op1 p,.op2 p,.op3 p,.op4 p {
+    margin-top: 5px;
+}
+.op1 p {
+margin-left: 1290px;
+}
+.op2 p {
+margin-left: 1415px;
+}
+.op3 p {
+    margin-left: 1290px;
+}
+.op4 p {
+    margin-left: 1395px;
+}
+
 
 .head {
     display: flex;
@@ -61,12 +135,12 @@
 
 body {
     background-color: rgb(211, 229, 247);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Poppins',Arial, Helvetica, sans-serif;
 }
 
 .pagina {
     margin-top: 30px;
-    margin-left: 300px;
+    margin-left: 30px;
     font-size: 30px;
     margin-top: 170px;
 }
@@ -82,14 +156,14 @@ body {
     border-radius: 15px;
     height: 170px;
     width: 400px;
-    margin-left: 320px;
+    margin-left: 30px;
     padding-left: 20px;
     padding-top: 20px;
     font-size: 20px;
 }
 
 .caixas1 img {
-margin-left: 200px;
+margin-left: 290px;
 height: 20px;
 width: 20px;
 }
@@ -98,16 +172,29 @@ width: 20px;
     padding-bottom:;
     
 }
-.caixas2 {
+.caixas1, .caixas2, .caixas3 {
     background-color: white;
     border-radius: 15px;
     height: 170px;
-    width: 400px;
-    margin-left: 30px;
+    width: 500px;
     padding-left: 20px;
     padding-top: 20px;
     font-size: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
 }
+.caixas1 {
+    margin-left: 30px;
+}
+.caixas2, .caixas3 {
+    margin-left: 30px;
+}
+
+.caixas1:hover, .caixas2:hover, .caixas3:hover {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+    transform: translateY(-10px) scale(1.03);
+}
+
 .caixas2 img {
     margin-left: 10px;
     height: 20px;
@@ -117,7 +204,7 @@ width: 20px;
     background-color: white;
     border-radius: 15px;
     height: 170px;
-    width: 400px;
+    width: 500px;
     margin-left: 30px;
     padding-left: 20px;
     padding-top: 20px;
@@ -125,6 +212,7 @@ width: 20px;
 }
 .caixas3 img {
     margin-left: 10px;
+    margin-bottom: 20px;
 
 }
 .alvodashboard {
@@ -135,11 +223,30 @@ width: 20px;
     width: 330px;
     height: 10px;
     border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
-
+.botaoperfil {
+    border: 1px solid #888;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-left: 1200px;
+    background-color: transparent;
+    transition: all 3s;
+}
+.botaot {
+    display: flex;
+}
+.botaoperfil img {
+    width: 50px;
+    height: 50px ;
+}
+.botaoperfil :active {
+    content: url('img/icone\ olho\ fechado.png');
+}
 .p1 {
     margin-top: 10px;
+    font-size: 30px;
 }
 .p2 {
     margin-top: 10px;
@@ -180,4 +287,38 @@ width: 20px;
 #p7 {
     border: none;
     font-size: 30px;    
+}
+.ultimo {
+  background: white;
+    margin-top: 20px;
+    height: 300px;
+    width: 1600px;
+    margin-left: 30px;
+    border-radius:10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ultimo h2 {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.ultimo button {
+    background-color: #007be5;
+    width:400px;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 20px; 
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    transition: all 0.2s ease-in-out; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.ultimo button:hover {
+    background-color: #080558;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }
