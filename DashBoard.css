@@ -30,7 +30,7 @@
 .opmae {
     background: white;
     margin-top: 20px;
-    height: 500px;
+    height: 450px;
     width: 1600px;
     margin-left: 30px;
     border-radius:10px ;
@@ -47,7 +47,19 @@
      margin-left: 25px;
 
 }
-.op1,.op2,.op3,.op4 {
+.op1 {
+display: flex;
+margin-top: 40px;
+border-radius: 5px;
+border: 1px solid #E0E0E0;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-left: 10px;
+margin-right: 20px;
+transition: box-shadow 0.3s ease-out, transform 0.3s ease-out; 
+cursor: pointer;
+}
+.op2,.op3,.op4 {
     display: flex;
     margin-top: 20px;
     border-radius: 5px;
@@ -291,31 +303,41 @@ width: 20px;
 .ultimo {
   background: white;
     margin-top: 20px;
-    height: 300px;
+    height: 180px;
     width: 1600px;
-    margin-left: 30px;
+    margin-bottom: 20px;
+
     border-radius:10px ;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 30px;
 }
 .ultimo h2 {
     margin-left: 20px;
     margin-top: 15px;
 }
-
+.botaou {
+    display: flex;
+}
 .ultimo button {
-    background-color: #007be5;
-    width:400px;
+    margin-left: 20px;
+    width:765px;
     border-radius: 10px;
-    height: 50px;
+    height: 80px;
     margin-top: 20px; 
     font-size: 20px;
-    color: white;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
     transition: all 0.2s ease-in-out; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.botao2 {
+    background-color:white ;
+    color: black;
+}
+.botao1 {
+    background-color: #007be5;
+    color: white;
 }
 .ultimo button:hover {
     background-color: #080558;
