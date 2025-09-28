@@ -7,6 +7,7 @@
 .bodyminhasenha {
     background-color: #3d38f5;
 }
+
 .Caixaminhasenha {
     background-color: white;
     margin-top: 20px;
@@ -14,11 +15,12 @@
     text-align: center;
     margin-left: 280px;
     margin-right: 150px;
-    height:400px;
+    height: 400px;
     width: 750px;
     font-family: 'Times New Roman', Times, serif;
-    
+
 }
+
 .Caixaminhasenha img {
     height: 60px;
     background-color: oklch(0.932 0.032 255);
@@ -26,34 +28,41 @@
     border-radius: 50px;
     margin-top: 20px;
 }
-.titulotop img {  
-    height: 65px;  
-    width: 70px; 
+
+.titulotop img {
+    height: 65px;
+    width: 70px;
     border-radius: 10px;
 }
+
 .titulotop {
     display: flex;
     font-size: 20px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
     margin-left: 470px;
-    margin-top: 20px  
+    margin-top: 20px
 }
+
 .h1top {
-margin-top: 10px;
-margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
+
 .cabeça h1 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .Caixaminhasenha input:focus {
     border: 2px solid #888;
     outline: none;
 }
+
 .chapou {
     margin-top: 10px;
 }
+
 .minhasenhavoltar {
     background-color: #3d38f5;
     border: none;
@@ -71,20 +80,24 @@ margin-left: 20px;
 .minhasenhavoltar :hover {
     background: #007BE5;
 }
+
 .cabeça {
     text-align: center;
 }
+
 .texto1 {
     font-size: 30px;
     margin-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .texto2 {
-font-family: Arial, Helvetica, sans-serif;
-margin-top: 10px;
-color: rgb(80, 80, 70);
-font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    color: rgb(80, 80, 70);
+    font-size: 14px;
 }
+
 .texto3 {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 50px;
@@ -92,6 +105,7 @@ font-size: 14px;
     margin-left: 36px;
     font-weight: bold;
 }
+
 .inputemail {
     border-radius: 8px;
     border: 1px solid #E0E0E0;
@@ -104,6 +118,7 @@ font-size: 14px;
     font-size: 20px;
     margin-top: 10px;
 }
+
 .butaoinsano {
     color: white;
     background-color: #3d38f5;
@@ -119,10 +134,11 @@ font-size: 14px;
     margin-left: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .caixaprecisadeajuda {
     color: white;
-    background-color: #007BE5 ;
-    height:100px;
+    background-color: #007BE5;
+    height: 100px;
     width: 750px;
     text-align: center;
     margin-left: 280px;
@@ -132,6 +148,7 @@ font-size: 14px;
     text-align: center;
     padding-top: 20px;
 }
+
 .ai {
     text-decoration: none;
 }
