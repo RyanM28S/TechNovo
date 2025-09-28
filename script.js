@@ -126,6 +126,9 @@ const inputNome = document.getElementById('seuNome');
 const inputSenha = document.getElementById('senhaPerfil');
 const inputEmail = document.getElementById('emailPerfil');
 const btnEditarNome = document.getElementById('btnEditarNome');
+const inputTelefone = document.getElementById("seuTelefone");
+const inputData = document.getElementById("suaData");
+const inputEndereco = document.getElementById("seuEndereco");
 if (inputNome) {
     inputNome.value = localStorage.getItem('nome') || '';
     inputNome.readOnly = true;
@@ -144,6 +147,65 @@ if (inputNome) {
         });
     }
 }
+if (inputTelefone) {
+    inputTelefone.value = localStorage.getItem('telefone') || '';
+    inputTelefone.readOnly = true;
+    if (btnEditarNome) {
+        btnEditarNome.addEventListener('click', function () {
+            inputTelefone.readOnly = !inputTelefone.readOnly;
+            if (inputTelefone.readOnly) {
+                localStorage.setItem('telefone', inputTelefone.value);
+                btnEditarNome.innerHTML = '<img src="img/logo lapis.png" alt="Editar"  style="height:30px; width:30px;">';
+            } else {
+                btnEditarNome.innerHTML = '<img src="img/logo salva.png" alt="Salvo"  style="height:30px; width:30px;">';
+                inputTelefone.focus();
+            }
+
+
+        });
+    }
+}
+if (inputData) {
+    inputData.value = localStorage.getItem('data') || '';
+    inputData.readOnly = true;
+    if (btnEditarNome) {
+        btnEditarNome.addEventListener('click', function () {
+            inputData.readOnly = !inputData.readOnly;
+            if (inputData.readOnly) {
+                localStorage.setItem('data', inputData.value);
+                btnEditarNome.innerHTML = '<img src="img/logo lapis.png" alt="Editar"  style="height:30px; width:30px;">';
+            } else {
+                btnEditarNome.innerHTML = '<img src="img/logo salva.png" alt="Salvo"  style="height:30px; width:30px;">';
+                inputData.focus();
+            }
+
+
+        });
+    }
+}
+if (inputEndereco) {
+    inputEndereco.value = localStorage.getItem('endereco') || '';
+    inputEndereco.readOnly = true;
+    if (btnEditarNome) {
+        btnEditarNome.addEventListener('click', function () {
+            inputEndereco.readOnly = !inputEndereco.readOnly;
+            if (inputEndereco.readOnly) {
+                localStorage.setItem('endereco', inputEndereco.value);
+                btnEditarNome.innerHTML = '<img src="img/logo lapis.png" alt="Editar"  style="height:30px; width:30px;">';
+            } else {
+                btnEditarNome.innerHTML = '<img src="img/logo salva.png" alt="Salvo"  style="height:30px; width:30px;">';
+                inputEndereco.focus();
+            }
+
+
+        });
+    }
+}
+
+
+
+
+
 if (inputSenha) {
     inputSenha.value = localStorage.getItem('senha') || '';
     inputSenha.readOnly = true;
@@ -434,5 +496,57 @@ function excluir4() {
     } else {
         alert("Ja esta vazio")
     }
+
+}
+function bonito() {
+    const esse = document.getElementById("btnMostrarSenha");
+
+    if (esse) {
+        esse.classList.add("esse")
+    }
+}
+function enviarMen() {
+    const nomeEn = document.getElementById("nomeEn").value;
+    const emailEn = document.getElementById("emailEn").value;
+    const assuntoEn = document.getElementById("assuntoEn").value;
+    const PrioridadeEn = document.getElementById("PrioridadeEn").value;
+    const mensagemEn = document.getElementById("mensagemEn").value;
+    const nomeEnin = document.getElementById("nomeEn");
+    const emailEnin = document.getElementById("emailEn");
+    const assuntoEnin = document.getElementById("assuntoEn");
+    const PrioridadeEnin = document.getElementById("PrioridadeEn");
+    const mensagemEnin = document.getElementById("mensagemEn");
+
+    if (nomeEn.length <= 0) {
+        nomeEnin.classList.add('input-erro');
+        return;
+    } else {
+        nomeEnin.classList.remove('input-erro');
+    }
+    if (emailEn.length <= 0) {
+        emailEnin.classList.add('input-erro');
+        return;
+    } else {
+        emailEnin.classList.remove('input-erro');
+    }
+    if (assuntoEn.length <= 0) {
+        assuntoEnin.classList.add('input-erro');
+        return;
+    } else {
+        assuntoEnin.classList.remove('input-erro');
+    }
+    if (PrioridadeEn.length <= 0) {
+        PrioridadeEnin.classList.add('input-erro');
+        return;
+    } else {
+        PrioridadeEnin.classList.remove('input-erro');
+    }
+    if (mensagemEn.length <= 0) {
+        mensagemEnin.classList.add('input-erro');
+        return;
+    } else {
+        mensagemEnin.classList.remove('input-erro');
+    }
+    alert("Menssagem enviada, aguarde a resposta!")
 
 }

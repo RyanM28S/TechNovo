@@ -20,14 +20,14 @@
         </div>
     </header>
     <main>
-        <div class="comecinho">
+        <div id="esse" class="comecinho">
             <div>
                 <h1>Meu Perfil</h1>
                 <p>Gerencie suas informações pessoais e preferências</p>
             </div>
             <br>
-            <div>
-                <button id="btnMostrarSenha" class="botaoperfil">
+            <div id="acha">
+                <button  id="btnMostrarSenha" class="botaoperfil">
                     <img src="img/icone olho.png" alt="icone" class="icone-olho">
                 </button>
             </div>
@@ -44,9 +44,9 @@
                 <label for="nomeperfil">Nome Completo</label>
                 <input type="text" id="seuNome" class="nomeperfil">
                 <label for="telefoneperfil">Telefone</label>
-                <input type="text" class="telefoneperfil">
+                <input type="text" id="seuTelefone" class="telefoneperfil">
                 <label for="datadenacimento">Data de Nascimento</label>
-                <input type="date" name="" class="datadenacimento">
+                <input type="date" id="suaData" name="" class="datadenacimento">
             </div>
             <div class="linha2">
                 <label for="emailperfil">Email</label>
@@ -54,7 +54,7 @@
                 <label for="senhaperfil">Senha</label>
                 <input id="senhaPerfil" type="password" class="senhaperfil">
                 <label for="cpf">Endereço</label>
-                <input type="text" class="cpf">
+                <input type="text" id="seuEndereco" class="cpf">
             </div>
         </div>
         <div class="secao">
@@ -65,8 +65,9 @@
             <p>Autenticação de dois fatores.</p>
             <p>Adicione uma camada extra de segurança.</p>
             <hr>
-
-            <button id="btnEditarNome2" class="btn-secao">Alterar Senha</button>
+            <a onclick="bonito()" href="#esse">
+                <button  id="btnEditarNome2" class="btn-secao">Alterar Senha</button>
+            </a>
             <button id="btnEditarNome2" class="btn-secao">Dispositivos Conectados</button>
             <button id="btnEditarNome2" class="btn-secao">Histórico de Login</button>
             <label class="toggle-switch">
@@ -80,7 +81,7 @@
                 <div class="opcao">
                     <span>E-mail</span>
                     <label class="toggle-switch">
-                        <input type="checkbox" >
+                        <input type="checkbox">
                         <span class="slider round"></span>
                     </label>
                 </div>
@@ -124,7 +125,8 @@
         <div class="contato">
             <h1>Informações de Contato</h1>
             <div class="contato-info">
-                <p><img src="img/logo correspondencia.png" alt="Email ícone" class="icone-contato"> TechInvestiment@email.com
+                <p><img src="img/logo correspondencia.png" alt="Email ícone" class="icone-contato">
+                    TechInvestiment@email.com
                 </p>
                 <p><img src="img/logo telefone.png" alt="Telefone ícone" class="icone-contato"> (11) 4002-8922</p>
                 <p><img src="img/logo local.png" alt="Localização ícone" class="icone-contato"> São Paulo, SP</p>

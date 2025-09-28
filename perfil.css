@@ -377,6 +377,7 @@ input:checked + .slider::before {
     cursor: pointer;
     transition: all 0.1s ease;
 }
+
 #btnMostrarSenha {
     display: flex;
     align-items: center;
@@ -397,4 +398,7 @@ input:checked + .slider::before {
 
 #btnEditarNome:hover {
     border-bottom: 5px solid #0f00e5;
+}
+.esse {
+    border: 5px solid red;
 }
