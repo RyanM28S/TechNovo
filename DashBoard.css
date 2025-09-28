@@ -3,18 +3,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .header {
     display: flex;
     height: 120px;
     width: 120px;
-    margin-left: 250px;
+    margin-left: 213px;
 }
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+#modal2.flex {
+    display: flex; 
+
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+#modal.flex {
+    display: flex; 
+
+}
+.conteiner {
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+
+}
+
 .p21 {
     color: green;
 }
+
 .titulopizza {
     display: flex;
 }
+
 .titulopizza h1 {
     margin-top: 7px;
     margin-left: 10px;
@@ -33,33 +76,39 @@
     height: 450px;
     width: 1600px;
     margin-left: 30px;
-    border-radius:10px ;
+    border-radius: 10px;
 }
+
 .opmae h1 {
     font-size: 20px;
     margin-left: 10px;
     margin-top: 15px;
 }
+
 .opmae h3 {
-     color: rgb(122, 122, 121);
-     font-style: normal;
-     margin-top: 10px;
-     margin-left: 25px;
+    color: rgb(122, 122, 121);
+    font-style: normal;
+    margin-top: 10px;
+    margin-left: 25px;
 
 }
+
 .op1 {
-display: flex;
-margin-top: 40px;
-border-radius: 5px;
-border: 1px solid #E0E0E0;
-padding-top: 10px;
-padding-bottom: 10px;
-margin-left: 10px;
-margin-right: 20px;
-transition: box-shadow 0.3s ease-out, transform 0.3s ease-out; 
-cursor: pointer;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+    cursor: pointer;
 }
-.op2,.op3,.op4 {
+
+.op2,
+.op3,
+.op4 {
     display: flex;
     margin-top: 20px;
     border-radius: 5px;
@@ -68,29 +117,45 @@ cursor: pointer;
     padding-bottom: 10px;
     margin-left: 10px;
     margin-right: 20px;
-    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out; 
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
     cursor: pointer;
 }
-.op1:hover, .op2:hover, .op3:hover, .op4:hover {
+
+.op1:hover,
+.op2:hover,
+.op3:hover,
+.op4:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-    border-color: #A0A0A0; 
+    border-color: #A0A0A0;
 }
-.op1 H2,.op2 h2,.op3 h2,.op4 h2{
-margin-left: 10px;
+
+.op1 H2,
+.op2 h2,
+.op3 h2,
+.op4 h2 {
+    margin-left: 10px;
 }
-.op1 p,.op2 p,.op3 p,.op4 p {
+
+.op1 p,
+.op2 p,
+.op3 p,
+.op4 p {
     margin-top: 5px;
 }
+
 .op1 p {
-margin-left: 1290px;
+    margin-left: 1290px;
 }
+
 .op2 p {
-margin-left: 1415px;
+    margin-left: 1415px;
 }
+
 .op3 p {
     margin-left: 1290px;
 }
+
 .op4 p {
     margin-left: 1395px;
 }
@@ -105,6 +170,7 @@ margin-left: 1415px;
     background-color: white;
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
 }
+
 .head h1 {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 40px;
@@ -146,8 +212,8 @@ margin-left: 1415px;
 }
 
 body {
-    background-color: rgb(211, 229, 247);
-    font-family:'Poppins',Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .pagina {
@@ -175,16 +241,21 @@ body {
 }
 
 .caixas1 img {
-margin-left: 290px;
-height: 20px;
-width: 20px;
+    margin-left: 290px;
+    height: 20px;
+    width: 20px;
 }
-.caixas1 h2,.caixas2 h2,.caixas3 h2 {
+
+.caixas1 h2,
+.caixas2 h2,
+.caixas3 h2 {
     font-size: 15px;
-    padding-bottom:;
-    
+
 }
-.caixas1, .caixas2, .caixas3 {
+
+.caixas1,
+.caixas2,
+.caixas3 {
     background-color: white;
     border-radius: 15px;
     height: 170px;
@@ -195,14 +266,19 @@ width: 20px;
     transition: box-shadow 0.3s, transform 0.3s;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
 }
+
 .caixas1 {
     margin-left: 30px;
 }
-.caixas2, .caixas3 {
+
+.caixas2,
+.caixas3 {
     margin-left: 30px;
 }
 
-.caixas1:hover, .caixas2:hover, .caixas3:hover {
+.caixas1:hover,
+.caixas2:hover,
+.caixas3:hover {
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
     transform: translateY(-10px) scale(1.03);
 }
@@ -212,6 +288,7 @@ width: 20px;
     height: 20px;
     width: 20px;
 }
+
 .caixas3 {
     background-color: white;
     border-radius: 15px;
@@ -222,21 +299,25 @@ width: 20px;
     padding-top: 20px;
     font-size: 20px;
 }
+
 .caixas3 img {
     margin-left: 10px;
     margin-bottom: 20px;
 
 }
+
 .alvodashboard {
     height: 20px;
     width: 20px;
 }
+
 .barraporcentagem {
     width: 330px;
     height: 10px;
     border-radius: 5px;
     margin-top: 20px;
 }
+
 .botaoperfil {
     border: 1px solid #888;
     width: 60px;
@@ -246,20 +327,25 @@ width: 20px;
     background-color: transparent;
     transition: all 3s;
 }
+
 .botaot {
     display: flex;
 }
+
 .botaoperfil img {
     width: 50px;
-    height: 50px ;
+    height: 50px;
 }
+
 .botaoperfil :active {
     content: url('img/icone\ olho\ fechado.png');
 }
+
 .p1 {
     margin-top: 10px;
     font-size: 30px;
 }
+
 .p2 {
     margin-top: 10px;
 }
@@ -267,18 +353,24 @@ width: 20px;
 .c1 img {
     width: 20px;
     height: 20px;
-    margin-left:260px ;
+    margin-left: 260px;
 }
+
 .c2 img {
     margin-left: 240px;
 }
+
 .c3 img {
     margin-left: 280px;
 }
-.c1,.c2,.c3 {
+
+.c1,
+.c2,
+.c3 {
     display: flex;
     width: 100px;
 }
+
 .foco {
     background-color: white;
     margin-left: 300px;
@@ -287,60 +379,76 @@ width: 20px;
     border-radius: 20px;
     padding: 30px;
 }
+
 .foco h3 {
     font-size: 25px;
 }
+
 .borda {
     border: 5px solid gray;
     padding: 20px;
     margin: 25px;
     border-radius: 20px;
 }
+
 #p7 {
     border: none;
-    font-size: 30px;    
+    font-size: 30px;
 }
+
 .ultimo {
-  background: white;
+    background: rgb(211, 206, 206);
     margin-top: 20px;
     height: 180px;
     width: 1600px;
     margin-bottom: 20px;
-
-    border-radius:10px ;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     margin-left: 30px;
 }
+
 .ultimo h2 {
     margin-left: 20px;
     margin-top: 15px;
 }
+
 .botaou {
     display: flex;
 }
+
 .ultimo button {
     margin-left: 20px;
-    width:765px;
+    width: 765px;
     border-radius: 10px;
     height: 80px;
-    margin-top: 20px; 
+    margin-top: 20px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
-    transition: all 0.2s ease-in-out; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .botao2 {
-    background-color:white ;
+    background-color: white;
     color: black;
 }
+
 .botao1 {
     background-color: #007be5;
     color: white;
 }
+
 .ultimo button:hover {
-    background-color: #080558;
+    background-color: #434349;
+    color: white;
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+.ultimo button:active {
+    background-color: green;
+}
+.botao3 {
+    background-color: rgb(241, 233, 233);
 }

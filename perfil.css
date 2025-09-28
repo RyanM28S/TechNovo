@@ -10,6 +10,7 @@
     width: 120px;
     margin-left: 250px;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f9;
@@ -20,17 +21,17 @@ body {
 }
 .head {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 1906px;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
 }
 
 .head h1 {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
 }
 
 .BotoesAcesso {
@@ -346,9 +347,7 @@ input:checked + .slider:before {
     width: 50px;
     height: 50px ;
 }
-.botaoperfil :active {
-    content: url('img/icone\ olho\ fechado.png');
-}
+
 .slider::before {
     content: '';
     position: absolute;
@@ -371,9 +370,12 @@ input:checked + .slider::before {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #btnEditarNome {
     font-size: x-large;
     height: 60px;
+    cursor: pointer;
+    transition: all 0.1s ease;
 }
 #btnMostrarSenha {
     display: flex;
@@ -390,5 +392,9 @@ input:checked + .slider::before {
 }
 
 #btnMostrarSenha:hover {
+    border-bottom: 5px solid #0f00e5;
+}
+
+#btnEditarNome:hover {
     border-bottom: 5px solid #0f00e5;
 }

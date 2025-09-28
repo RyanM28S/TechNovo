@@ -13,6 +13,7 @@
 <body>
     <header>
         <div class="head">
+            <button onclick="irLogin()">Voltar</button>
             <img class="header" src="img/logo.png" alt="Logo da empresa">
             <h1>TechInvestiment</h1>
             <button class="BotoesAcesso">DashBoard</button>
@@ -25,11 +26,11 @@
         <div class="pagina">
             <div class="botaot">
                 <h2>DashBoard</h2>
-                <button  class="botaoperfil">
+                <button class="botaoperfil">
                     <img src="img/icone olho.png" alt="icone" class="iconeperfil">
                 </button>
             </div>
-            
+
             <p>Acompanhe seus investimentos em tempo real</p>
         </div>
         <div class="conteiners">
@@ -38,19 +39,23 @@
                     <h2>Patrimono total</h2>
                     <img src="img/icone dinheirinho.png" alt="icone">
                 </div>
-                <strong><p class="p1">R$ 20.000</p></strong>
+                <strong>
+                    <p class="p1">R$ 20.000</p>
+                </strong>
                 <div class="caixa1m">
                     <p class="p21">+2.1% este mes</p>
-                    
+
                 </div>
-                
+
             </div>
             <div class="caixas2">
                 <div class="c2">
                     <h2>Rentabilidade</h2>
                     <img src="img/icone seta para cima.png" alt="icone" class="seta1">
                 </div>
-                <strong><p class="p1">+12.5%</p></strong>
+                <strong>
+                    <p class="p1">+12.5%</p>
+                </strong>
                 <p class="p2">Ultimos 12 meses</p>
             </div>
             <div class="caixas3">
@@ -58,7 +63,9 @@
                     <h2>Meta mensal</h2>
                     <img src="img/icone meta.png" alt="icone" class="alvodashboard">
                 </div>
-                <strong><p class="p1">78%</p></strong>
+                <strong>
+                    <p class="p1">78%</p>
+                </strong>
                 <img src="img/logolinhadashboard.png" alt="logolinha" class="barraporcentagem">
             </div>
         </div>
@@ -66,35 +73,61 @@
             <div class="titulopizza">
                 <img src="img/grafico-de-pizza (1).png" alt="icone">
                 <h1>Meus investimentos</h1>
-                
+
             </div>
-            
+
             <h3>Resumo da sua carteira</h3>
             <div class="op1">
-                <h2>Tesouro direto</h2>
-                <p>R$5.000</p>
+                <h2 id="op1">Tesouro Direto</h2>
+                <p id="op1p">R$5.000</p>
             </div>
             <div class="op2">
-                <h2>CDB</h2>
-                <p>R$2.500</p>
+                <h2 id="op2">CDB</h2>
+                <p id="op2p">R$2.500</p>
             </div>
             <div class="op3">
-                <h2>Cripto Moedas</h2>
-                <p>R$1.800</p>
+                <h2 id="op3">Cripto Moedas</h2>
+                <p id="op3p">R$1.800</p>
             </div>
             <div class="op4">
-                <h2>Açoes</h2>
-                <p>R$3.000</p>
+                <h2 id="op4">Ações</h2>
+                <p id="op4p">R$3.000</p>
             </div>
         </div>
         <div class="ultimo">
             <h2>Ações Rápidas</h2>
             <div class="botaou">
-                <button class="botao1">↗ Novo Investimento</button>
-                <button class="botao2">$ Retirar Investimento</button>
+                <button onclick="novo()" class="botao1">↗ Novo Investimento</button>
+                <div class="modal" id="modal">
+                    <div class="conteiner">
+                        <div>
+                            <h2>Seus investimentos</h2>
+                            <button onclick="fechar()" class="BotoesAcesso2">Voltar</button>
+                        </div>
+
+                        <button class="botao3" onclick="addA()">Ações</button>
+                        <button class="botao3" onclick="addCM()">Cripto Moedas</button>
+                        <button class="botao3" onclick="addTD()">Tesouro Direto</button>
+                        <button class="botao3" onclick="addCDB()">CDB</button>
+                    </div>
+                </div>
+                <button onclick="tira()" class="botao2">$ Retirar Investimento</button>
+                <div class="modal2" id="modal2">
+                    <div class="conteiner">
+                        <div>
+                            <h2>Qual Quer Excluir</h2>
+                            <button onclick="fechar2()" class="BotoesAcesso2">Voltar</button>
+                        </div>
+
+                        <button class="botao3" onclick="excluir1()">Excluir a Primeira</button>
+                        <button class="botao3" onclick="excluir2()">Excluir a Segunda</button>
+                        <button class="botao3" onclick="excluir3()">Excluir a Terceira</button>
+                        <button class="botao3" onclick="excluir4()">Excluir a Quarta</button>
+                    </div>
+                </div>
             </div>
         </div>
-           
+
     </main>
     <footer></footer>
     <script src="script.js"></script>

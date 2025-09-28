@@ -32,7 +32,7 @@ function fazerCadastro() {
 
     if (senhaCadastro.length < 6) {
         divErro.classList.add('show');
-        textoErro.textContent = `Aumente este texto para 6 caracteres ou mais.`;
+        textoErro.textContent = `Senha muito curta!`;
         inputSCadastro.classList.add('input-erro');
         return;
     } else {
@@ -41,7 +41,7 @@ function fazerCadastro() {
 
     if (confirmaCadastro !== senhaCadastro) {
         divErro.classList.add('show');
-        textoErro.textContent = `Esta diferente.`;
+        textoErro.textContent = `Senha esta diferente.`;
         inputCCadastro.classList.add('input-erro');
         return;
     } else {
@@ -104,11 +104,12 @@ function irSuporte() {
 function irDashBoard() {
     window.location.href = 'DashBoard.html'
 }
-function irTezte() {
-    window.location.href = 'tezte.html'
-}
+
 function irEsqueciMinhaSenha() {
     window.location.href = 'EsqueciMinhaSenha.html'
+}
+function irLogin() {
+    window.location.href = 'Login.html'
 }
 const btnCriarConta = document.getElementById('btnCriarConta');
 if (btnCriarConta) {
@@ -133,9 +134,9 @@ if (inputNome) {
             inputNome.readOnly = !inputNome.readOnly;
             if (inputNome.readOnly) {
                 localStorage.setItem('nome', inputNome.value);
-                btnEditarNome.textContent = 'Editar';
+                btnEditarNome.innerHTML = '<img src="img/logo lapis.png" alt="Editar"  style="height:30px; width:30px;">';
             } else {
-                btnEditarNome.textContent = 'Salvar';
+                btnEditarNome.innerHTML = '<img src="img/logo salva.png" alt="Salvo"  style="height:30px; width:30px;">';
                 inputNome.focus();
             }
 
@@ -151,9 +152,9 @@ if (inputSenha) {
             inputSenha.readOnly = !inputSenha.readOnly;
             if (inputSenha.readOnly) {
                 localStorage.setItem('senha', inputSenha.value);
-                btnEditarNome.textContent = 'Editar';
+                btnEditarNome.innerHTML = '<img src="img/logo lapis.png" alt="Editar" style="height:30px; width:30px;">';
             } else {
-                btnEditarNome.textContent = 'Salvar';
+                btnEditarNome.innerHTML = '<img src="img/logo salva.png" alt="Salvo" style="height:30px; width:30px;">';
                 inputSenha.focus();
             }
 
@@ -169,9 +170,9 @@ if (inputEmail) {
             inputEmail.readOnly = !inputEmail.readOnly;
             if (inputEmail.readOnly) {
                 localStorage.setItem('email', inputEmail.value);
-                btnEditarNome.textContent = 'Editar';
+                btnEditarNome.innerHTML = '<img src="img/logo lapis.png" alt="Editar" style="height:30px; width:30px;">';
             } else {
-                btnEditarNome.textContent = 'Salvar';
+                btnEditarNome.innerHTML = '<img src="img/logo salva.png" alt="Salvo" style="height:30px; width:30px;">';
                 inputEmail.focus();
             }
 
@@ -183,15 +184,19 @@ const btnMostrarSenha = document.getElementById('btnMostrarSenha');
 const inputSenhaPerfil = document.getElementById('senhaPerfil');
 
 if (btnMostrarSenha && inputSenhaPerfil) {
+    const imgOlho = btnMostrarSenha.querySelector('.icone-olho');
+    imgOlho.src = 'img/icone olho.png';
+
     btnMostrarSenha.addEventListener('click', function (e) {
         e.preventDefault();
         if (inputSenhaPerfil.type === 'password') {
             inputSenhaPerfil.type = 'text';
-            btnMostrarSenha.querySelector('.p1').textContent = 'Ocultar Dados';
+            imgOlho.src = 'img/icone olho fechado.png';
         } else {
             inputSenhaPerfil.type = 'password';
-            btnMostrarSenha.querySelector('.p1').textContent = 'Mostrar Dados';
+            imgOlho.src = 'img/icone olho.png';
         }
+
     });
 }
 function enviarIns() {
@@ -200,6 +205,7 @@ function enviarIns() {
         alert('Por favor, digite seu e-mail.');
         return;
     }
+    alert('Verifique seu Email... Amanhão');
 
     const assunto = encodeURIComponent('Solicitação de Entrevista - [ Nome da Empresa ]');
     const corpo = encodeURIComponent(
@@ -209,4 +215,224 @@ function enviarIns() {
     console.log(mailtoLink);
 
     window.location.href = mailtoLink;
+}
+function novo() {
+    const modal = document.getElementById('modal');
+    modal.classList.add('flex')
+}
+function fechar() {
+    const modal = document.getElementById('modal');
+    modal.classList.remove('flex')
+}
+
+
+function addA() {
+    const op1 = document.getElementById('op1');
+    const op2 = document.getElementById('op2');
+    const op3 = document.getElementById('op3');
+    const op4 = document.getElementById('op4');
+    const op1p = document.getElementById('op1p');
+    const op2p = document.getElementById('op2p');
+    const op3p = document.getElementById('op3p');
+    const op4p = document.getElementById('op4p');
+
+    const item = 'Ações';
+    const preco = 'R$3.000';
+
+
+
+    if (op1.textContent === '') {
+        op1.textContent = item;
+        op1p.textContent = preco;
+
+    } else if (op2.textContent === '') {
+        op2.textContent = item;
+        op2p.textContent = preco;
+
+    } else if (op3.textContent === '') {
+        op3.textContent = item;
+        op3p.textContent = preco;
+
+    } else if (op4.textContent === '') {
+        op4.textContent = item;
+        op4p.textContent = preco;
+
+    } else {
+        alert('Não tem espaço');
+    }
+    const modal = document.getElementById('modal2');
+    modal.classList.remove('flex')
+}
+function addCM() {
+    const op1 = document.getElementById('op1');
+    const op2 = document.getElementById('op2');
+    const op3 = document.getElementById('op3');
+    const op4 = document.getElementById('op4');
+    const op1p = document.getElementById('op1p');
+    const op2p = document.getElementById('op2p');
+    const op3p = document.getElementById('op3p');
+    const op4p = document.getElementById('op4p');
+    const item = 'Cripto Moedas';
+    const preco = 'R$1.800';
+
+
+
+    if (op1.textContent === '') {
+        op1.textContent = item;
+        op1p.textContent = preco;
+
+    } else if (op2.textContent === '') {
+        op2.textContent = item;
+        op2p.textContent = preco;
+
+    } else if (op3.textContent === '') {
+        op3.textContent = item;
+        op3p.textContent = preco;
+
+    } else if (op4.textContent === '') {
+        op4.textContent = item;
+        op4p.textContent = preco;
+
+    } else {
+        alert('Não tem espaço');
+    }
+    const modal = document.getElementById('modal2');
+    modal.classList.remove('flex')
+}
+function addTD() {
+    const op1 = document.getElementById('op1');
+    const op2 = document.getElementById('op2');
+    const op3 = document.getElementById('op3');
+    const op4 = document.getElementById('op4');
+    const op1p = document.getElementById('op1p');
+    const op2p = document.getElementById('op2p');
+    const op3p = document.getElementById('op3p');
+    const op4p = document.getElementById('op4p');
+    const item = 'Tesouro Direto';
+    const preco = 'R$5.000';
+
+
+
+    if (op1.textContent === '') {
+        op1.textContent = item;
+        op1p.textContent = preco;
+
+    } else if (op2.textContent === '') {
+        op2.textContent = item;
+        op2p.textContent = preco;
+
+    } else if (op3.textContent === '') {
+        op3.textContent = item;
+        op3p.textContent = preco;
+
+    } else if (op4.textContent === '') {
+        op4.textContent = item;
+        op4p.textContent = preco;
+
+    } else {
+        alert('Não tem espaço');
+    }
+    const modal = document.getElementById('modal2');
+    modal.classList.remove('flex')
+}
+function addCDB() {
+    const op1 = document.getElementById('op1');
+    const op2 = document.getElementById('op2');
+    const op3 = document.getElementById('op3');
+    const op4 = document.getElementById('op4');
+    const op1p = document.getElementById('op1p');
+    const op2p = document.getElementById('op2p');
+    const op3p = document.getElementById('op3p');
+    const op4p = document.getElementById('op4p');
+    const item = 'CDB';
+    const preco = 'R$2.500';
+
+
+
+    if (op1.textContent === '') {
+        op1.textContent = item;
+        op1p.textContent = preco;
+        const modal = document.getElementById('modal2');
+        modal.classList.remove('flex')
+
+    } else if (op2.textContent === '') {
+        op2.textContent = item;
+        op2p.textContent = preco;
+        const modal = document.getElementById('modal2');
+        modal.classList.remove('flex')
+
+    } else if (op3.textContent === '') {
+        op3.textContent = item;
+        op3p.textContent = preco;
+        const modal = document.getElementById('modal2');
+        modal.classList.remove('flex')
+
+    } else if (op4.textContent === '') {
+        op4.textContent = item;
+        op4p.textContent = preco;
+        const modal = document.getElementById('modal2');
+        modal.classList.remove('flex')
+
+    } else {
+        alert('Não tem espaço');
+
+    }
+    const modal = document.getElementById('modal2');
+    modal.classList.remove('flex')
+
+}
+function tira() {
+    const modal = document.getElementById('modal2');
+    modal.classList.add('flex')
+}
+function fechar2() {
+    const modal = document.getElementById('modal2');
+    modal.classList.remove('flex')
+}
+function excluir1() {
+    const op1 = document.getElementById('op1');
+    const op1p = document.getElementById('op1p');
+    if (op1 !== '') {
+        op1.textContent = ''
+        op1p.textContent = ''
+    } else {
+        alert("Ja esta vazio")
+    }
+
+
+}
+function excluir2() {
+    const op2 = document.getElementById('op2');
+    const op2p = document.getElementById('op2p');
+    if (op2 !== '') {
+        op2.textContent = ''
+        op2p.textContent = ''
+    } else {
+        alert("Ja esta vazio")
+    }
+
+
+}
+function excluir3() {
+    const op3 = document.getElementById('op3');
+    const op3p = document.getElementById('op3p');
+    if (op3 !== '') {
+        op3.textContent = ''
+        op3p.textContent = ''
+    } else {
+        alert("Ja esta vazio")
+    }
+
+
+}
+function excluir4() {
+    const op4 = document.getElementById('op4');
+    const op4p = document.getElementById('op4p');
+    if (op4 !== '') {
+        op4.textContent = ''
+        op4p.textContent = ''
+    } else {
+        alert("Ja esta vazio")
+    }
+
 }
