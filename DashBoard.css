@@ -452,3 +452,12 @@ body {
 .botao3 {
     background-color: rgb(241, 233, 233);
 }
+#pesquise {
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 400px;
+    
+}
