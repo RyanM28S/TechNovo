@@ -1,17 +1,18 @@
 .caixa_informacoes {
     background-color: #FFFFFF;
     text-align: center;
-    margin-left: 410px;
-    margin-right: 410px;
-    border-radius: 10px;
+    width: 800px;
+    margin-left: 550px;
+    margin-top: 30px;
+    border-radius: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: rgb(206, 198, 198);
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 5000px;
     transition: box-shadow 0.3s;
+    justify-content: center;
 }
-
+.
 .caixa_informacoes:hover {
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
 
@@ -34,20 +35,25 @@
 }
 
 .texto {
-    text-align: left;
     margin-bottom: 15px;
-    padding-left: 90px;
+}
+
+.texto input {
+    margin-right: px;
 }
 
 .toptop img {
     height: 65px;
     width: 70px;
     border-radius: 10px;
+    margin-left: 275px;
+    
 }
 
 .h1top {
     margin-top: 10px;
     margin-left: 20px;
+
 }
 
 .toptop {
@@ -69,8 +75,13 @@
 
 .check .aceitartermos {
     margin-bottom: 0;
-    margin-left: 10px;
+    margin-left: 200px;
     height: 20px;
+
+}
+.check label {
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .labelace {
@@ -91,14 +102,15 @@
 .caixa_informacoes input {
     border-radius: 5px;
     border: 1px solid #E0E0E0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 10px;
-    padding-right: 100px;
+    padding-right: 170px;
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     margin-bottom: 15px;
-    margin-left: 0;
+    margin-left: 220px;
+    margin-top: 5px;
 }
 
 .titulo button {
@@ -155,6 +167,7 @@
 .titulo {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
 }
 
 .titulo h1 {
@@ -170,7 +183,7 @@
 
 .nomecompleto {
     background: #f6f7f8;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
 .gmail {
@@ -202,6 +215,7 @@
   position: relative;
   font-size: 14px;
 }
+
 .mensagemErro.show {
   display: flex; 
   align-items: center;
