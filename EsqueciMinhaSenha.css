@@ -41,7 +41,7 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 770px;
-    margin-top: 20px
+    margin-top: 100px
 }
 
 .h1top {
@@ -117,6 +117,7 @@
     margin-left: 10px;
     font-size: 20px;
     margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .butaoinsano {
@@ -137,7 +138,7 @@
 
 .caixaprecisadeajuda {
     color: white;
-    background-color: #007BE5;
+    background-color: #213dbb;
     height: 150px;
     width: 750px;
     text-align: center;
@@ -148,8 +149,6 @@
     text-align: center;
     padding-top: 35px;
     font-size: 20px;
-}
-.caixaprecisadeajuda p {
     
 }
 
