@@ -267,11 +267,11 @@ function enviarIns() {
         alert('Por favor, digite seu e-mail.');
         return;
     }
-    alert('Verifique seu Email... Amanhão');
+    alert('Verifique seu Email...');
 
     const assunto = encodeURIComponent(' Redefina sua senha no TechInvestment');
     const corpo = encodeURIComponent(
-        `Prezado [Usuario],\n\nGostaria de expressar meu interesse em uma oportunidade de entrevista. Agradeceria se pudesse confirmar seus dados para contato e sugerir uma data e horário convenientes.\n\nAtenciosamente,\n\n[Nome do Interessado]`
+        `Prezado [Usuario],\n\nRecebemos uma solicitação para redefinir a senha da sua conta no TechIvestment.\n\nPara criar uma nova senha e recuperar o acesso, clique no botão abaixo:\n\n[Botão: Redefinir Senha]\n\nObservação de segurança: Este link expirará em [período de tempo, ex: 24 horas] para sua proteção.\n\nSe você não solicitou a redefinição de senha, por favor, ignore este e-mail. Nenhuma alteração foi feita na sua conta. No entanto, se isso for um erro ou se você tiver preocupações de segurança, entre em contato conosco imediatamente em TechInvestment@gmail.com.\n\nObrigado,Equipe Techinvestment [Link para o site da empresa]`
     );
     const mailtoLink = `mailto:${email}?subject=${assunto}&body=${corpo}`;
     console.log(mailtoLink);
