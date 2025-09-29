@@ -141,3 +141,14 @@ form input:focus {
 .input-erro {
     border: 2px solid #ff3333 !important;
 }
+#imagi {
+    display: flex;
+    border-radius: 100px;
+    color: white;
+    font-size: larger;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img {
+    border-radius: 10px;
+}
