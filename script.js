@@ -269,9 +269,9 @@ function enviarIns() {
     }
     alert('Verifique seu Email... Amanhão');
 
-    const assunto = encodeURIComponent('Solicitação de Entrevista - [ Nome da Empresa ]');
+    const assunto = encodeURIComponent(' Redefina sua senha no TechInvestment');
     const corpo = encodeURIComponent(
-        `Prezado [Vinicius Santos Camelo],\n\nGostaria de expressar meu interesse em uma oportunidade de entrevista. Agradeceria se pudesse confirmar seus dados para contato e sugerir uma data e horário convenientes.\n\nAtenciosamente,\n\n[Nome do Interessado]`
+        `Prezado [Usuario],\n\nGostaria de expressar meu interesse em uma oportunidade de entrevista. Agradeceria se pudesse confirmar seus dados para contato e sugerir uma data e horário convenientes.\n\nAtenciosamente,\n\n[Nome do Interessado]`
     );
     const mailtoLink = `mailto:${email}?subject=${assunto}&body=${corpo}`;
     console.log(mailtoLink);
