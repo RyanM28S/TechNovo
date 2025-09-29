@@ -166,6 +166,7 @@ body {
 
 .maetodosuporte {
     display: flex;
+    margin-bottom: 30px;
 }
 
 .barradepesquisasuporte {
