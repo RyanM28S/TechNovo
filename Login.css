@@ -101,11 +101,12 @@ form input:focus {
     text-decoration: none;
     font-size: 0.9rem;
     cursor: pointer;
-    transition: text-decoration 0.3s;
+    transition: border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
 
-.esquci_c a:hover {
-    text-decoration: underline;
+.esqueci_c a:hover {
+border-bottom: 2px solid blue;
 }
 
 .pagina_pé {
