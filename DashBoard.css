@@ -48,9 +48,7 @@
     background-color: white;
     border-radius: 10px;
     padding-bottom: 30px;
-
 }
-
 .p21 {
     color: green;
 }
@@ -91,6 +89,7 @@
     font-style: normal;
     margin-top: 10px;
     margin-left: 25px;
+    font-weight: normal;
 
 }
 
@@ -120,6 +119,7 @@
     margin-right: 20px;
     transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
     cursor: pointer;
+
 }
 
 .op1:hover,
@@ -136,6 +136,7 @@
 .op3 h2,
 .op4 h2 {
     margin-left: 10px;
+    font-size: 20px;
 }
 
 .op1 p,
@@ -146,25 +147,29 @@
 }
 
 .op1 p {
-    margin-left: 1290px;
-    color: #007be5;
+    margin-left: 1285px;
+   color: #007be5;
 }
 
 .op2 p {
-    margin-left: 1415px;
+    margin-left: 1390px;
     color: #007be5;
 }
 
 .op3 p {
-    margin-left: 1290px;
+    margin-left: 1285px;
     color: #007be5;
 }
 
 .op4 p {
-    margin-left: 1395px;
+    margin-left: 1370px;
     color: #007be5;
 }
-
+.op1 img,.op2 img,.op3 img,.op4 img {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
 
 .head {
     display: flex;
@@ -228,12 +233,14 @@ body {
     font-size: 30px;
     margin-top: 170px;
 }
-.co
+.pagina p {
+    font-size: 20px;
+    color: #6e6a6a;
+}
 .conteiners {
     display: flex;
     margin-top: 30px;
 }
-
 
 .caixas1 {
     background-color: white;
@@ -364,11 +371,15 @@ body {
     height: 20px;
     margin-left: 260px;
 }
-
+.c1 h2,.c2 h2,.c3 h2 {
+    white-space: nowrap;
+    color: #6e6a6a;
+    font-weight: normal;
+    font-size: 20px;
+}
 .c2 img {
     margin-left: 240px;
 }
-
 .c3 img {
     margin-left: 280px;
 }
@@ -450,7 +461,7 @@ body {
 }
 
 .ultimo button:hover {
-    background-color: #434349;
+    background-color: #0707e4;
     color: white;
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
