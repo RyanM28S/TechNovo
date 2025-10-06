@@ -48,6 +48,9 @@
     background-color: white;
     border-radius: 10px;
     padding-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100PX;
+    padding-left: 30PX;
 }
 .p21 {
     color: green;
@@ -112,6 +115,7 @@
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
     border-color: #007be5;
+
 }
 
 .op1 H2,
@@ -399,6 +403,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 32px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 .ultimo h2 {
@@ -470,7 +475,8 @@ transform: translateY(-2px);
     transform: translateX(8px);
 }
 #pesquise {
-    width: 100%;
+    margin-left: 20px;
+    width: 93%;
     padding: 15px;
     margin-top: 15px;
     border: 2px solid #e8ecf1;
@@ -478,6 +484,7 @@ transform: translateY(-2px);
     font-size: 16px;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     transition: all 0.3s ease;
+
 }
 
 #pesquise:focus {
